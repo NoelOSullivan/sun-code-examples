@@ -1,0 +1,70 @@
+:root {
+  --ui-color: #3f8428;
+  --glow-color: #3f8428;
+  --rosette-url: 'data/voting/rosette.png';
+  --quiz-logo-url: 'data/voting/logo.png';
+  --leader-url: 'data/voting/leader-torso.png';
+  --button-bg-url: 'data/voting/button.png';
+  --button-bg-hover-url: 'data/voting/button-hover.png';
+  --result-panel-url: 'data/voting/result-panel.png';
+  --headline-panel-url: 'data/voting/headline-panel.png';
+}
+
+.results #result-text p,
+.questionHolder #headline p,
+.questionHolder .answers .answer {
+  color:#000;
+}
+.results #result-text p,
+.questionHolder #headline p,
+.questionHolder .answers .answer .caption {
+    text-shadow: 1px -1px rgba(255,255,255,0.5);
+}
+
+.questionHolder .imageHolder {
+  background-image: url('data/voting/frame-back.png');
+  padding: 12px 16px; /* Substituted borders for padding */
+    border:none 0px transparent;
+}
+
+#start #leader-torso {
+  height:777px;
+  top:500px;
+}
+
+#scene {
+  position:absolute;
+  background-repeat:no-repeat;
+  top: 38px;
+  left: -152px;
+  overflow:hidden;
+  width:960px;
+  height:570px;
+  animation-fill-mode:forwards;
+}
+
+#cross {
+  position:absolute;
+  background-image: url('data/voting/cross.png');
+  top: 60px;
+  left: 320px;
+  width: 405px;
+  height: 472px;
+}
+
+#tick {
+  position:absolute;
+  background-image: url('data/voting/tick.png');
+  top: 50px;
+  left: 280px;
+  width: 405px;
+  height: 472px;
+}
+
+.result0 #cross {
+  visibility: hidden;
+}
+
+.result100 #tick {
+  visibility: hidden;
+}

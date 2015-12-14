@@ -1,0 +1,128 @@
+:root {
+  --ui-color: #951ad1;
+  --glow-color: #c415f5;
+  --rosette-url: 'data/bercow/rosette-bercow.png';
+  --quiz-logo-url: 'data/bercow/logo-bercow.png';
+  --leader-url: 'data/bercow/bercow-torso.png';
+  --button-bg-url: 'data/bercow/button.png';
+  --button-bg-hover-url: 'data/bercow/button-hover.png';
+  --result-panel-url: 'data/bercow/result-panel.png';
+  --headline-panel-url: 'data/bercow/headline-panel.png';
+}
+
+
+
+.questionHolder .imageHolder {
+  background-image: url('data/bercow/frame-back.png');
+  padding: 12px 16px; /* Substituted borders for padding */
+    border:none 0px transparent;
+}
+
+#start #leader-torso {
+  top:680px;
+  height:543px;
+}
+
+#scene {
+  position: absolute;
+  overflow: hidden;
+  top:-192px;
+  left:-151px;
+  width:960px;
+  height:900px;
+}
+
+#bercow-end-1 {
+   position:absolute;
+   background-image:url('data/bercow/bercow-end-1.png');
+   top:250px;
+   left:180px;
+   width:654px;
+   height:512px;
+}
+
+#bercow-end-2 {
+   position:absolute;
+   background-image:url('data/bercow/bercow-end-2.png');
+   top:180px;
+   left:210px;
+   width:587px;
+   height:586px;
+}
+
+#bercow-end-3 {
+   position:absolute;
+   background-image:url('data/bercow/bercow-end-3.png');
+   top:180px;
+   left:80px;
+   width:826px;
+   height:580px;
+}
+
+#bercow-end-4 {
+   position:absolute;
+   background-image:url('data/bercow/bercow-end-4.png');
+   top:150px;
+   left:220px;
+   width:568px;
+   height:610px;
+}
+
+.result0 #bercow-end-2,
+.result0 #bercow-end-3,
+.result0 #bercow-end-4 {
+  display:none;
+}
+.result10 #bercow-end-2,
+.result10 #bercow-end-3,
+.result10 #bercow-end-4 {
+  display:none;
+}
+.result20 #bercow-end-2,
+.result20 #bercow-end-3,
+.result20 #bercow-end-4 {
+  display:none;
+}
+
+.result30 #bercow-end-1,
+.result30 #bercow-end-3,
+.result30 #bercow-end-4 {
+  display:none;
+}
+.result40 #bercow-end-1,
+.result40 #bercow-end-3,
+.result40 #bercow-end-4 {
+  display:none;
+}
+.result50 #bercow-end-1,
+.result50 #bercow-end-3,
+.result50 #bercow-end-4 {
+  display:none;
+}
+
+.result60 #bercow-end-1,
+.result60 #bercow-end-2,
+.result60 #bercow-end-4 {
+  display:none;
+}
+.result70 #bercow-end-1,
+.result70 #bercow-end-2,
+.result70 #bercow-end-4 {
+  display:none;
+}
+.result80 #bercow-end-1,
+.result80 #bercow-end-2,
+.result80 #bercow-end-4 {
+  display:none;
+}
+
+.result90 #bercow-end-1,
+.result90 #bercow-end-2,
+.result90 #bercow-end-3 {
+  display:none;
+}
+.result100 #bercow-end-1,
+.result100 #bercow-end-2,
+.result100 #bercow-end-3 {
+  display:none;
+}

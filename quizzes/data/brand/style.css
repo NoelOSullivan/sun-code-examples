@@ -1,0 +1,231 @@
+:root {
+  --ui-color: #3f8428;
+  --glow-color: #3f8428;
+  --rosette-url: 'data/brand/rosette.png';
+  --quiz-logo-url: 'data/brand/logo.png';
+  --leader-url: 'data/brand/leader-torso.png';
+  --button-bg-url: 'data/brand/button.png';
+  --button-bg-hover-url: 'data/brand/button-hover.png';
+  --result-panel-url: 'data/brand/result-panel.png';
+  --headline-panel-url: 'data/brand/headline-panel.png';
+}
+
+.questionHolder .imageHolder {
+  background-image: url('data/brand/frame-back.png');
+  padding: 12px 16px; /* Substituted borders for padding */
+    border:none 0px transparent;
+}
+
+#start #leader-torso {
+  height:777px;
+  top:504px;
+}
+
+#scene, #scene > *, #brand > * {
+  position:absolute;
+  background-repeat:no-repeat;
+  animation-fill-mode:forwards;
+}
+
+#scene-container {
+  position:absolute;
+  top: -190px;
+  left: -150px;
+  overflow:hidden;
+  width:960px;
+  height:760px;
+}
+
+#scene {
+  top: 190px;
+  left: 150px;
+}
+
+#brand {
+  top: 101px;
+  left: 301px;
+}
+
+#brand-body {
+  background-image: url('data/brand/brand-body.png');
+  left: 0px;
+  top: 0px;
+  width: 112px;
+  height: 425px;
+}
+
+#brand-head {
+  left: -33px;
+  top: -118px;
+  transform-origin: 86px 161px;
+}
+
+#brand-head-front {
+  position:absolute;
+  background-image: url('data/brand/brand-head.png');
+  background-repeat:no-repeat;
+  width: 179px;
+  height: 180px;
+}
+
+#brand-halo {
+  position:absolute;
+  background-image: url('data/brand/brand-halo.png');
+  left: -26px;
+  top: -37px;
+  width: 207px;
+  height: 85px;
+}
+
+#brand-arm-left {
+  background-image: url('data/brand/brand-arm-left.png');
+   left: -177px;
+  top: 15px;
+   width: 199px;
+  height: 78px;
+  transform-origin: 190px 20px;
+}
+
+#brand-arm-right {
+  background-image: url('data/brand/brand-arm-right.png');
+  left: 82px;
+  top: 17px;
+  width: 200px;
+  height: 77px;
+  transform-origin: 13px 20px;
+}
+
+#shaft {
+  background-image: url('data/brand/brand-shaft.png');
+  left: 42px;
+  top: -191px;
+  width: 607px;
+  height: 945px;
+}
+
+.css3on #brand {
+  top: 751px;
+  animation: brandRise 3s ease-out 4s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes brandRise {
+  0% { top: 751px; }
+  100% { top: 101px; }
+}
+
+.css3on #shaft {
+  transform: translate(0,-945px);
+  animation: shaftAnim 2s ease-out 3.5s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes shaftAnim {
+  0% { transform: translate(0,-945px); }
+  100% {transform: translate(0,0); }
+}
+
+.css3on #brand-head {
+  animation: headTurn00 2s ease-out 5s;
+  animation-fill-mode:forwards;
+}
+
+.result0 #brand-head { animation-name: headTurn00; }
+.result10 #brand-head { animation-name: headTurn01; }
+.result20 #brand-head { animation-name: headTurn02; }
+.result30 #brand-head { animation-name: headTurn03; }
+.result40 #brand-head { animation-name: headTurn04; }
+.result50 #brand-head { animation-name: headTurn05; }
+.result60 #brand-head { animation-name: headTurn06; }
+.result70 #brand-head { animation-name: headTurn07; }
+.result80 #brand-head { animation-name: headTurn08; }
+.result90 #brand-head { animation-name: headTurn09; }
+.result100 #brand-head { animation-name: headTurn10; }
+
+@keyframes headTurn00 { 0% { transform: rotateZ(0); } 100% { transform: rotateZ(-30deg); } }
+@keyframes headTurn01 { 0% { transform: rotateZ(0); } 100% { transform: rotateZ(-25deg); } }
+@keyframes headTurn02 { 0% { transform: rotateZ(0); } 100% { transform: rotateZ(-15deg); } }
+@keyframes headTurn03 { 0% { transform: rotateZ(0); } 100% { transform: rotateZ(-10deg); } }
+@keyframes headTurn04 { 0% { transform: rotateZ(0); } 100% { transform: rotateZ(-5deg); } }
+@keyframes headTurn05 { 0% { transform: rotateZ(0); } 100% { transform: rotateZ(0deg); } }
+@keyframes headTurn06 { 0% { transform: rotateZ(0); } 100% { transform: rotateZ(5deg); } }
+@keyframes headTurn07 { 0% { transform: rotateZ(0); } 100% { transform: rotateZ(10deg); } }
+@keyframes headTurn08 { 0% { transform: rotateZ(0); } 100% { transform: rotateZ(15deg); } }
+@keyframes headTurn09 { 0% { transform: rotateZ(0); } 100% { transform: rotateZ(20deg); } }
+@keyframes headTurn10 { 0% { transform: rotateZ(0); } 100% { transform: rotateZ(25deg); } }
+
+.css3on #brand-arm-left,.css3on #brand-arm-right {
+  animation: brandArmL00 3.5s ease-out 4.5s;
+  animation-fill-mode:forwards;
+}
+
+.result0 #brand-arm-left { animation-name: brandArmL00; }
+.result10 #brand-arm-left { animation-name: brandArmL0s1; }
+.result20 #brand-arm-left { animation-name: brandArmL02; }
+.result30 #brand-arm-left { animation-name: brandArmL03; }
+.result40 #brand-arm-left { animation-name: brandArmL04; }
+.result50 #brand-arm-left { animation-name: brandArmL05; }
+.result60 #brand-arm-left { animation-name: brandArmL06; }
+.result70 #brand-arm-left { animation-name: brandArmL07; }
+.result80 #brand-arm-left { animation-name: brandArmL08; }
+.result90 #brand-arm-left { animation-name: brandArmL09; }
+.result100 #brand-arm-left { animation-name: brandArmL10; }
+.result0 #brand-arm-right { animation-name: brandArmR00; }
+.result10 #brand-arm-right { animation-name: brandArmR01; }
+.result20 #brand-arm-right { animation-name: brandArmR02; }
+.result30 #brand-arm-right { animation-name: brandArmR03; }
+.result40 #brand-arm-right { animation-name: brandArmR04; }
+.result50 #brand-arm-right { animation-name: brandArmR05; }
+.result60 #brand-arm-right { animation-name: brandArmR06; }
+.result70 #brand-arm-right { animation-name: brandArmR07; }
+.result80 #brand-arm-right { animation-name: brandArmR08; }
+.result90 #brand-arm-right { animation-name: brandArmR09; }
+.result100 #brand-arm-right { animation-name: brandArmR10; }
+
+@keyframes brandArmL00 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(-20deg);} }
+@keyframes brandArmL01 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(-15deg);} }
+@keyframes brandArmL02 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(-10deg);} }
+@keyframes brandArmL03 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(-5deg);} }
+@keyframes brandArmL04 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(0deg);} }
+@keyframes brandArmL05 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(10deg);} }
+@keyframes brandArmL06 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(20deg);} }
+@keyframes brandArmL07 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(30deg);} }
+@keyframes brandArmL08 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(40deg);} }
+@keyframes brandArmL09 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(50deg);} }
+@keyframes brandArmL10 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(60deg);} }
+@keyframes brandArmR00 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(20deg);} }
+@keyframes brandArmR01 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(15deg);} }
+@keyframes brandArmR02 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(10deg);} }
+@keyframes brandArmR03 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(5deg);} }
+@keyframes brandArmR04 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(-0deg);} }
+@keyframes brandArmR05 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(-10deg);} }
+@keyframes brandArmR06 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(-20deg);} }
+@keyframes brandArmR07 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(-30deg);} }
+@keyframes brandArmR08 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(-40deg);} }
+@keyframes brandArmR09 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(-50deg);} }
+@keyframes brandArmR10 { 0% {transform: rotateZ(0);} 100% { transform:rotateZ(-60deg);} }
+
+.css3on #brand-halo {
+  transform: translate(0, -1700px);
+  animation: haloDrop 1s ease-in 5s;
+  animation-fill-mode:forwards;
+}
+.result0 #brand-halo,
+.result10 #brand-halo,
+.result20 #brand-halo,
+.result30 #brand-halo,
+.result40 #brand-halo,
+.result50 #brand-halo {
+  animation-duration:2s;
+  animation-name:haloDropWonk;
+}
+
+@keyframes haloDrop {
+  0% { transform: translate(0, -1700px); }
+  100% { transform: translate(0, 0); }
+}
+@keyframes haloDropWonk {
+  0% { transform: translate(0, -1700px); }
+  80% { transform: translate(0, 0); }
+  100% { transform: translate(-50px, 30px) rotateZ(-45deg); }
+}

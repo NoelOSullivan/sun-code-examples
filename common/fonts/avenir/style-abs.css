@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Avenir Next LT Pro Heavy Condensed';
+  src: url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextLTW01-HeavyCn_721323.eot'); /* IE9 Compat Modes */
+  src: url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextLTW01-HeavyCn_721323.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextLTW01-HeavyCn_721323.woff') format('woff'), /* Pretty Modern Browsers */
+       url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextLTW01-HeavyCn_721323.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextLTW01-HeavyCn_721323.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro Bold Condensed';
+  src: url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextBoldCn.eot'); /* IE9 Compat Modes */
+  src: url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextBoldCn.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextBoldCn.woff') format('woff'), /* Pretty Modern Browsers */
+       url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextBoldCn.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextBoldCn.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Avenir Heavy';
+  src: url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextLTW01-Heavy.eot');
+  src: url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextLTW01-Heavy.eot?#iefix') format('embedded-opentype'), url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextLTW01-Heavy.svg') format('svg'), url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextLTW01-Heavy.woff') format('woff'), url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextLTW01-Heavy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir Ultralite';
+  src: url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextLTW01-UltraLi.eot');
+  src: url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextLTW01-UltraLi.eot?#iefix') format('embedded-opentype'), url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextLTW01-UltraLi.svg') format('svg'), url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextLTW01-UltraLi.woff') format('woff'), url('http://www.sunnation.co.uk/games/release/common/fonts/avenir/AvenirNextLTW01-UltraLi.ttf') format('truetype');
+}

@@ -1,0 +1,171 @@
+:root {
+  --ui-color: #2e58bc;
+  --glow-color: #2ba7e7;
+  --rosette-url: 'data/cameron/rosette-tory.png';
+  --quiz-logo-url: 'data/cameron/logo-tory.png';
+  --leader-url: 'data/cameron/cameron-tory.png';
+  --button-bg-url: 'data/cameron/button.png';
+  --button-bg-hover-url: 'data/cameron/button-hover.png';
+  --result-panel-url: 'data/cameron/result-panel.png';
+  --headline-panel-url: 'data/cameron/headline-panel.png';
+}
+
+.end-game #results-container {
+  animation-duration: 1s;
+  animation-delay: 3s;
+}
+
+#coins > * {
+  position:absolute;
+}
+
+#coin-shadow {
+  width:289px;
+  height:134px;
+  background-image: url('data/cameron/coin-shadow.png');
+  left: 200px;
+  top: 400px;
+}
+
+#coins .coin {
+  width:292px;
+  height:133px;
+  left:220px;
+  top:368px;
+  background-image: url('data/cameron/coin.png');
+}
+
+.css3on #coins .coin {
+  transform: translateY(-800px); /* translate off top of screen */
+  animation-name: dropInCoinPlain;
+  animation-fill-mode: forwards;
+  animation-duration:0.6s;
+  animation-delay:3s;
+  animation-timing-function: ease-in;
+}
+.filteron #coins .coin {
+  animation-name: dropInCoin;
+}
+.css3on #coins #coin-shadow {
+  transform: scale(8);
+  animation-name: shrinkShadow;
+  animation-fill-mode: forwards;
+  animation-duration:2s;
+  animation-delay:3s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes shrinkShadow {
+  0% { transform: scale(8);}
+  100% { transform: scale(1);}
+}
+@keyframes dropInCoin {
+  0% { transform: translateY(-800px) rotateZ(-15deg); filter:url("#motionBlur") }
+  98% { transform: translateY(3px) rotateZ(10deg); filter:url("#motionBlur") }
+  100% { transform: translateY(0px) rotateZ(0deg); }
+}
+@keyframes dropInCoinB {
+  0% { transform: translateY(-800px) rotateZ(15deg); filter:url("#motionBlur") }
+  98% { transform: translateY(3px) rotateZ(-10deg); filter:url("#motionBlur") }
+  100% { transform: translateY(0px) rotateZ(0deg); }
+}
+
+@keyframes dropInCoinPlain {
+  0% { transform: translateY(-800px) rotateZ(-15deg); }
+  98% { transform: translateY(3px) rotateZ(10deg); }
+  100% { transform: translateY(0px) rotateZ(0deg); }
+}
+@keyframes dropInCoinBPlain {
+  0% { transform: translateY(-800px) rotateZ(15deg); }
+  98% { transform: translateY(3px) rotateZ(-10deg); }
+  100% { transform: translateY(0px) rotateZ(0deg); }
+}
+
+#coins #coin-1 { animation-delay: 4.6s; top: 368px; left:220px; }
+#coins #coin-2 { animation-delay: 4.8s; top: 333px; left:211px; animation-name: dropInCoinBPlain; }
+#coins #coin-3 { animation-delay: 5.0s; top: 291px; left:224px; animation-name: dropInCoinBPlain; }
+#coins #coin-4 { animation-delay: 5.2s; top: 253px; left:210px; }
+#coins #coin-5 { animation-delay: 5.4s; top: 217px; left:228px; animation-name: dropInCoinBPlain; }
+#coins #coin-6 { animation-delay: 5.6s; top: 173px; left:196px; }
+#coins #coin-7 { animation-delay: 6.0s; top: 134px; left:223px; }
+#coins #coin-8 { animation-delay: 6.2s; top: 103px; left:203px; animation-name: dropInCoinBPlain; }
+#coins #coin-9 { animation-delay: 6.4s; top: 64px; left:228px; animation-name: dropInCoinBPlain; }
+#coins #coin-10{ animation-delay: 6.6s; top: 23px; left:216px; }
+#coins #coin-11{ animation-delay: 6.8s; top: 0px; left:204px; animation-name: dropInCoinBPlain; }
+
+.filteron #coins #coin-2, .filteron #coins #coin-3, .filteron #coins #coin-5,
+.filteron #coins #coin-8, .filteron #coins #coin-9, .filteron #coins #coin-11 {
+  animation-name: dropInCoinB
+}
+
+.result0 .coin {
+  display:none;
+}
+.result0 #coin-1 {
+  display:block;
+}
+
+.result10 #coin-11,
+.result10 #coin-3,
+.result10 #coin-4,
+.result10 #coin-5,
+.result10 #coin-6,
+.result10 #coin-7,
+.result10 #coin-8,
+.result10 #coin-9,
+.result10 #coin-10 {
+  display:none;
+}
+
+.result20 #coin-11,
+.result20 #coin-4,
+.result20 #coin-5,
+.result20 #coin-6,
+.result20 #coin-7,
+.result20 #coin-8,
+.result20 #coin-9,
+.result20 #coin-10 {
+  display:none;
+}
+.result30 #coin-11,
+.result30 #coin-5,
+.result30 #coin-6,
+.result30 #coin-7,
+.result30 #coin-8,
+.result30 #coin-9,
+.result30 #coin-10 {
+  display:none;
+}
+.result40 #coin-11,
+.result40 #coin-6,
+.result40 #coin-7,
+.result40 #coin-8,
+.result40 #coin-9,
+.result40 #coin-10 {
+  display:none;
+}
+.result50 #coin-11,
+.result50 #coin-7,
+.result50 #coin-8,
+.result50 #coin-9,
+.result50 #coin-10 {
+  display:none;
+}
+.result60 #coin-11,
+.result60 #coin-8,
+.result60 #coin-9,
+.result60 #coin-10 {
+  display:none;
+}
+.result70 #coin-11,
+.result70 #coin-9,
+.result70 #coin-10 {
+  display:none;
+}
+.result80 #coin-11,
+.result80 #coin-10 {
+  display:none;
+}
+.result90 #coin-11 {
+  display:none;
+}

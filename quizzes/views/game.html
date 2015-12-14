@@ -1,0 +1,27 @@
+<div ng-controller="GameController" ng-class="{ incoming:anim.incoming, outgoing:anim.outgoing }">
+    <div class="questionHolder">
+        <div class="imageHolder">
+            <img ng-src="{{ 'data/' + quizName + '/assets/' + question.imageUrl }}">
+        </div>
+        <div id="headline" ng-if="showHeadlines"><p ng-bind-html="question.title | nl2br"></p></div>
+        <div class="answers">
+            <ul>
+                <div ng-repeat="a in question.questions" class="answer unselectable interactive" ng-class="{'answer-selected': a.value === currentScore}" ng-click="chooseAnswer(a, $event)">
+                    <span class="tick"></span>
+                    <span class="caption">{{a.text}}</span>
+                </div>
+            </ul>
+        </div>
+        <div class="questionSelector container unselectable">
+            <div class="naviagtionWrapper">
+                <div id="next" ng-click="prevQuestion()" class="navigationItem scroller prev interactive unselectable">Next</div>
+                <div class="questionWrapper navigationItem">
+                    <ul>
+                        <li class="questions interactive {{question.current}} unselectable" ng-model="question.answerVal" ng-repeat="question in questions" ng-click="jumpToQuestion(question.id)">Question {{question.id}}</li>
+                    </ul>
+                </div>
+                <div id="next" ng-click="nextQuestion()" class="navigationItem scroller next interactive unselectable">Next</div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,516 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Avenir Next LT Pro Heavy Condensed";
+    background-color: #fff;
+    overflow: hidden;
+}
+.scaleWrapper {
+    margin: 0 auto;
+}
+
+#game-container {
+    background-image: url('ui/textureOverlay.jpg');
+    width: 960px;
+    height: 1280px;
+    position: relative;
+    transform-origin: 0 0;
+    overflow:hidden;
+}
+
+#sunnation-logo {
+    position:absolute;
+    background-image: url('ui/sun-nation-logo.png');
+    width:598px;
+    height:77px;
+    top:50px;
+    left:180px;
+}
+
+#leader-torso {
+    position:absolute;
+    background-image: url(var(--leader-url));
+    background-repeat: no-repeat;
+    width:960px;
+    height:500px;
+    top:693px;
+    left:0;
+    background-position:50% 100%;
+}
+
+#party-rosette-logo {
+    position:absolute;
+    top:190px;
+    left:150px;
+    width:700px;
+    height:888px;
+    background-image: url(var(--rosette-url));
+}
+
+/* TODO: non-css3 version with smaller BG image */
+.in-game #party-rosette-logo {
+    /*left:-254;top:-376;*/
+    top:-195px;
+    left:380px;
+    transform: scale(0.25);
+    transition: transform 1.5s cubic-bezier(0.455, -0.900, 0.545, 1.250), top 1.5s ease-in-out, left 1.5s ease-in-out;
+}
+
+/* Transition back at end */
+.end-game #party-rosette-logo {
+    top:190px;
+    left:150px;
+    transform: scale(1);
+    transition: transform 1.5s cubic-bezier(0.455, -0.900, 0.545, 1.250), top 1.5s ease-in-out, left 1.5s ease-in-out;
+}
+
+#party-rosette-logo #quiz-logo {
+    width:600px;
+    height:600px;
+    top:30px;   
+    left:50px;
+    opacity:1;
+    position:absolute;
+    background-image: url(var(--quiz-logo-url));
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+}
+
+.end-game #party-rosette-logo #quiz-logo {
+    opacity:0;
+    transition:opacity 1s ease-in-out;
+    transition-delay: 2s;
+}
+
+.questionSelector {
+    height: 59px;
+    padding-top: 21px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    background-color: #78040a;
+    background-image: url('ui/footerBG.png');
+}
+
+.imageHolder {
+    width: 640px;
+    height: 480px;
+    position: absolute;
+    top: 185px;
+    left:144px;
+    border-style:solid;
+    border-width:12px 16px 12px 16px;
+    border-color: var(--ui-color);
+    box-shadow: 0px 19px 18px rgba(0,0,0,0.3);
+}
+
+.css3on .imageHolder {
+    transform: translateX(960px);
+}
+.css3on .incoming .imageHolder {
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.css3on .outgoing .imageHolder {
+    transform: translateX(-960px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.subTitle {
+    margin: 0 auto;
+    width: 700px;
+    height: 208px;
+    margin-top: 240px;
+    background-image: url('ui/subTitleBg.png');
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 50% 50%;
+}
+
+.subTitle.big {
+    background-image: url('ui/headline-box-large.png');
+    height: 254px;
+    margin-top:194px;
+}
+
+.css3on .subTitle {
+    transform: translateX(-960px);
+}
+.css3on .incoming .subTitle {
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+    transition-delay:0.5s;
+}
+
+.css3on .outgoing .subTitle {
+    transform: translateX(960px);
+    transition: transform 0.5s ease-in-out;
+    transition-delay:0.5s;    
+}
+
+.subTitle .text {
+    color: #FFF;
+    font-size: 58px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 32px;
+    text-transform: uppercase;
+    text-shadow: 1px -2px #000;
+    font-family: "Avenir Next LT Pro Bold Condensed";
+}
+
+.answers {
+    position: relative;
+    width: 563px;
+    margin:820px auto 0 auto;
+}
+.answers .answer {
+    width: 564px;
+    height: 165px;
+    background-image: url(var(--button-bg-url));
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 150px;
+    font-size: 42px;
+    position: relative;
+    /*transition: background-image 0.1s ease-in-out;*/
+    color:#fff;
+    cursor: pointer;
+}
+.answers .answer:hover,.answers .answer-selected {
+    background-image: url(var(--button-bg-hover-url));
+}
+.filteron .answers .answer-selected {
+    filter: drop-shadow(0px 0px 30px var(--glow-color));
+    /*
+    transition: background-image 0.2s ease-in-out, filter 2s ease-in-out;
+    */
+}
+
+.filteron .answers .answer:hover *,.filteron .answers .answer-selected * {
+    filter: none;
+}
+
+.answers .answer .caption {
+     display: inline-block;
+      vertical-align: middle;
+      line-height: normal; 
+    text-shadow: 1px -1px rgba(0,0,0,0.5);
+    margin-left: 85px;
+}
+.answers .answer .tick {
+    display:none;
+    position: absolute;
+    top: 45px;
+    left: 21px;
+    width: 62px;
+    height: 62px;
+}
+.answers .answer-selected .tick {
+    display:block;
+    content: url('ui/answerButtonTick.png');
+}
+.answers .answer:first-child {
+    margin-top: 10px;
+}
+.navigationItem {
+    float: left;
+    overflow: hidden;
+}
+.navigation .questions {
+    display:inline;
+    display:inline-block;
+}
+.scroller {
+    width: 28px;
+    height: 37px;
+    background-image: url('ui/footerIcons.png');
+    text-indent: -1000px;
+    cursor: pointer;
+    float: left;
+}
+.interactive {
+    cursor: pointer;
+}
+.scroller.next {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+.naviagtionWrapper {
+    display: inline-block;
+}
+.questionWrapper .questions {
+    display: inline-block;
+    background-image: url('ui/footerIcons.png');
+    background-position: -36px 0;
+    width: 36px;
+    height: 36px;
+    margin: 0 15px;
+    overflow: hidden;
+    text-indent: -1000px;
+}
+.questionWrapper .questions.active {
+    background-position: -71px 0;
+}
+.questionWrapper .questions:first-child {
+    margin-left: 54px;
+}
+.questionWrapper .questions:last-child {
+    margin-right: 54px;
+}
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/* Start screen and anims */
+#start {
+    width: 960px;
+    height:1280px;
+}
+
+#start #play-button, #results .playAgain {
+    position:absolute;
+    width:251px;
+    height:104px;
+    left:351px;
+    top:1137px;
+    background-image:url('ui/playNow.png');
+    background-repeat: no-repeat;
+    background-position:0 0;
+    transition: background-image 0.5s ease-in-out;
+}
+#start:hover #play-button,#start:active #play-button,
+#results .playAgain:hover, #results .playAgain:active {
+    background-image:url('ui/playNowHover.png');
+    transition: background-image 0.5s ease-in-out;
+}
+
+/* End results screen */
+.css3on #results {
+    opacity:0;
+    animation-duration: 2s;
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+}
+
+#results .playAgain {
+    width:313px;
+    background-image: url('ui/tryAgain.png');
+}
+#results .playAgain:hover,#results .playAgain:active {
+    background-image: url('ui/tryAgainHover.png');
+}
+
+.css3on #results .playAgain {
+    opacity: 0;
+    animation-duration: 2s;
+    animation-delay:6s;
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+}
+
+#share-buttons {
+    position:relative;
+    background-image: url('ui/shareBack.png');
+    width:569px;
+    height:154px;
+    top:990px;
+    left:200px;
+}
+
+.css3on #share-buttons {
+    opacity:0;
+    animation-duration: 2s;
+    animation-delay:5.5s;
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+}
+
+#share-buttons .fbShare {
+    background-image: url('ui/facebook.png');
+    transition: background-image 0.2s ease-in-out;
+    width:569px;
+    height:154px;
+    background-position: 16px 27px;
+    background-repeat:no-repeat;
+}
+#share-buttons .fbShare:hover,#share-buttons .fbShare:active {
+    background-image: url('ui/facebookHover.png');
+    transition: background-image 0.2s ease-in-out;
+}
+#share-buttons .button-twitter {
+    display:block;
+    background-image: url('ui/twitterHover.png');
+    position:absolute;
+    transition: background-image 0.2s ease-in-out;
+    background-repeat:no-repeat;
+    background-position: 26px 27px;
+    right:0;
+    top:0;
+    height:154px;
+    width:150px;
+}
+#share-buttons .button-twitter:hover,#share-buttons .button-twitter:active {
+    background-image: url('ui/twitter.png');
+    transition: background-image 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+#results-container {
+    display:none;
+    opacity:0;
+    animation-name:fadeIn;
+    animation-fill-mode:forwards;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    position:absolute;
+    top:190px;
+    left:150px;
+    z-index:200;
+}
+.end-game #results-container {
+    display:block;
+}
+.end-game #party-rosette-logo {
+    z-index:5;
+}
+
+#view-container {
+    z-index:10;
+    position:absolute;
+    width:0;
+    height:0;
+}
+
+.in-game #view-container {
+    z-index:0;
+    position:inherit;
+    width:100%;
+    height:100%;
+}
+
+.end-game #view-container {
+    z-index:10;
+    position:absolute;
+    width:0;
+    height:0;
+}
+
+#result-text {
+    position:absolute;
+    left: 87px;
+    top:597px;
+    width:813px;
+    height:482px;
+    line-height:520px;
+    background-image:url(var(--result-panel-url));
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+}
+
+.css3on #result-text {
+    transform: translateX(-900px);
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-name: slideIn;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+    0%: {
+        transform: translateX(-900px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#result-text p, #headline p {
+    font-family: 'Avenir Heavy';
+    text-align: center;
+    transform: rotate(-5deg);
+    text-transform: uppercase;
+    margin:0;
+    padding:0 90px;
+    font-size:50px;
+    color:#fff;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 0.84; 
+}
+
+#headline p {
+    width:100%;
+  padding:0px;
+}
+
+#headline {
+  background-image: url(var(--headline-panel-url));
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 153px;
+  top: 552px;
+  width: 644px;
+  height: 268px;
+  line-height:280px;
+}
+
+.css3on #headline {
+    transform: translate(-960px,100px);
+}
+.css3on .incoming #headline {
+    transform: translate(0,0);
+    transition: transform 0.4s ease-in-out;
+    transition-delay:0.4s;
+}
+
+.css3on .outgoing #headline {
+    transform: translate(960px,-100px);
+    transition: transform 0.4s ease-in-out;
+    transition-delay:0.4s;
+}
+
+#play-next {
+    background-image:url('ui/playAnother.png');
+    position:absolute;
+    left:160px;
+    top:1140px;
+    width:644px;
+    height:108px;
+    padding-top:32px;
+    text-align:center;
+    text-transform: uppercase;
+    font-size:48px;
+    color:#fff;
+    text-shadow: 0 -1px rgba(0,0,0,128);
+    cursor:pointer;
+}
+
+.css3on #play-next {
+    transform: translateY(150px);
+    animation: showNext 1s ease-in-out 6.5s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes showNext { to { transform: translateY(0px); }}

@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Avenir Next LT Pro Heavy Condensed';
+  src: url('AvenirNextLTW01-HeavyCn_721323.eot'); /* IE9 Compat Modes */
+  src: url('AvenirNextLTW01-HeavyCn_721323.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AvenirNextLTW01-HeavyCn_721323.woff') format('woff'), /* Pretty Modern Browsers */
+       url('AvenirNextLTW01-HeavyCn_721323.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AvenirNextLTW01-HeavyCn_721323.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro Bold Condensed';
+  src: url('AvenirNextBoldCn.eot'); /* IE9 Compat Modes */
+  src: url('AvenirNextBoldCn.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AvenirNextBoldCn.woff') format('woff'), /* Pretty Modern Browsers */
+       url('AvenirNextBoldCn.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AvenirNextBoldCn.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

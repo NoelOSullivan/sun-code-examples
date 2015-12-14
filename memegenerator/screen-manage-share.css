@@ -1,0 +1,237 @@
+:root {
+  --green-meme-color: #97ff80;
+  --libdem-meme-color: #e8a341;
+  --ukip-meme-color: #9a5de8;
+  --labour-meme-color: #ff5757;
+  --tory-meme-color: #52c0ff;
+  /*-------------------------------*/
+  --green-meme-text-color: #79cc66;
+  --libdem-meme-text-color: #ba8234;
+  --ukip-meme-text-color: #7b4aba;
+  --labour-meme-text-color: #cc4646;
+  --tory-meme-text-color: #429acc;
+  /*-------------------------------*/
+  --green-meme-shadow-color: #c4f9b9;
+  --libdem-meme-shadow-color: #ffd69d;
+  --ukip-meme-shadow-color: #c49cf8;
+  --labour-meme-shadow-color: #ffafaf;
+  --tory-meme-shadow-color: #b9e5ff;
+}
+
+#screen-share{
+  visibility: hidden;
+}
+
+/*-------------------------------------SLEEVES*/ 
+
+/* OTHER SLEEVE CSS FOUND IN screen-choice-party */
+
+.sleeve-share {
+  position: absolute;
+  top: 0px;
+  left : 0px;
+  width: 1290px;
+  height: 960px;
+}
+
+.share-interface-left {
+  position: absolute;
+  width: 315px;
+  height: 960px;
+}
+
+#share-text {
+  position: absolute;
+  background-image: url("images/screen-share/share.png");
+  left : 80px;
+  top: 150px;
+  width: 166px;
+  height: 47px;
+}
+
+#share-again {
+  position: absolute;
+  background-image: url("images/screen-share/share-again.png");
+  left : 20px;
+  top: 150px;
+  width: 272px;
+  height: 47px;
+}
+
+#facebook-button {
+  position: absolute;
+  background-image: url("images/screen-share/facebook.png");
+  left : 100px;
+  top: 220px;
+  width: 120px;
+  height: 120px;
+  box-shadow: 4.95px 4.95px 0px 0px rgba( 0, 0, 0, 0.3 );
+  cursor:pointer;
+}
+
+#twitter-button {
+  position: absolute;
+  background-image: url("images/screen-share/twitter.png");
+  left : 100px;
+  top: 360px;
+  width: 120px;
+  height: 120px;
+  box-shadow: 4.95px 4.95px 0px 0px rgba( 0, 0, 0, 0.3 );
+  cursor:pointer;
+}
+
+#download-button {
+  position: absolute;
+  background-image: url("images/screen-share/download.png");
+  left : 100px;
+  top: 500px;
+  width: 120px;
+  height: 120px;
+  cursor:pointer;
+  box-shadow: 4.95px 4.95px 0px 0px rgba( 0, 0, 0, 0.3 );
+}
+
+.back-text {
+  position: absolute;
+  background-image: url("images/screen-share/back.png");
+  left : 40px;
+  top: 670px;
+  width: 113px;
+  height: 47px;
+}
+
+.restart-text {
+  position: absolute;
+  background-image: url("images/screen-share/restart.png");
+  left : 97px;
+  top: 670px;
+  width: 141px;
+  height: 47px;
+}
+
+.back-button {
+  position: absolute;
+  background-image: url("images/screen-share/back-button.png");
+  left : 55px;
+  top: 725px;
+  width: 80px;
+  height: 80px;
+  box-shadow: 4.95px 4.95px 0px 0px rgba( 0, 0, 0, 0.3 );
+  cursor:pointer;
+}
+
+.restart-button {
+  position: absolute;
+  background-image: url("images/screen-share/restart-button.png");
+  left : 122px;
+  top: 725px;
+  width: 80px;
+  height: 80px;
+  box-shadow: 4.95px 4.95px 0px 0px rgba( 0, 0, 0, 0.3 );
+  cursor:pointer;
+}
+
+.share-interface-right {
+  position: absolute;
+  left: 316px;
+  width: 882px;
+  height: 960px;
+}
+
+.wall-text {
+  position: absolute;
+  background-image: url("images/screen-share/post-to-wall.png");
+  left: 45px;
+  top: 150px;
+  width: 400px;
+  height: 56px;
+}
+
+#text-box {
+  position: absolute;
+  background-color: #FFF;
+  left: 45px;
+  top: 220px;
+  width: 800px;
+  height: 200px;
+  box-shadow: 4.95px 4.95px 0px 0px rgba( 0, 0, 0, 0.3 );
+  text-align: left;
+  font-size:40px;
+  font-family: "Avenir Next LT Pro Bold Condensed";
+  overflow:hidden;
+  resize: none;
+}
+
+#char-count {
+  position: absolute;
+  background-color: #dddddd;
+  left: 790px;
+  top: 170px;
+  width: 60px;
+  height: 36px;
+  box-shadow: 2px 2px 0px 0px rgba( 0, 0, 0, 0.3 );
+  text-align: right;
+  font-size:30px;
+  font-family: "Avenir Next LT Pro Bold Condensed";
+  overflow:hidden;
+  resize: none;
+}
+
+#see-facebook {
+  position: absolute;
+  background-image: url("images/screen-share/see-facebook.png");
+  left: 80px;
+  top: 490px;
+  width: 143px;
+  height: 108px;
+}
+
+#see-twitter {
+  position: absolute;
+  background-image: url("images/screen-share/see-twitter.png");
+  left: 670px;
+  top: 490px;
+  width: 143px;
+  height: 108px;
+}
+
+#go-to-facebook {
+  position: absolute;
+  background-image: url("images/screen-share/facebook.png");
+  left : 90px;
+  top: 620px;
+  width: 120px;
+  height: 120px;
+  box-shadow: 4.95px 4.95px 0px 0px rgba( 0, 0, 0, 0.3 );
+  cursor:pointer;
+}
+
+#go-to-twitter {
+  position: absolute;
+  background-image: url("images/screen-share/twitter.png");
+  left : 680px;
+  top: 620px;
+  width: 120px;
+  height: 120px;
+  box-shadow: 4.95px 4.95px 0px 0px rgba( 0, 0, 0, 0.3 );
+  cursor:pointer;
+}
+
+#share-canvas-wrapper {
+  position: absolute;
+  background-color: rgb( 255, 245, 104 );
+  box-shadow: 4.95px 4.95px 0px 0px rgba( 0, 0, 0, 0.3);
+  left: 580px;
+  top: 450px;
+  width: 350px;
+  height: 350px;
+}
+
+#share-canvas {
+  position: absolute;
+  background-color: rgb( 255, 255, 255 );
+  left: 2px;
+  top: 2px;
+  width: 346px;
+  height: 346px;
+}

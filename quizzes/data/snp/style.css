@@ -1,0 +1,96 @@
+:root {
+  --ui-color: #fdf853;
+  --glow-color: #fdf853;
+  --rosette-url: 'data/snp/rosette-snp.png';
+  --quiz-logo-url: 'data/snp/logo-snp.png';
+  --leader-url: 'data/snp/nicola-torso.png';
+  --button-bg-url: 'data/snp/button.png';
+  --button-bg-hover-url: 'data/snp/button-hover.png';
+  --result-panel-url: 'data/snp/result-panel.png';
+  --headline-panel-url: 'data/snp/headline-panel.png';
+}
+
+#bru-mask, #bru-fill-container {
+  position:absolute;
+  top: 6px;
+  left: 260px;
+  width:177px;
+  height:532px;
+}
+#bru-mask {
+    background-image: url('data/snp/bru-cutout.png');
+}
+#bru-fill-container {
+   overflow:hidden;
+}
+
+#bru-fill {
+   position:absolute;
+   background-image: url('data/snp/bru-fill.png');
+   background-repeat: no-repeat;
+   left:5px;
+   top:520px;
+   width:167px;
+   height:484px;
+   animation-fill-mode: forwards;
+   animation-timing-function: ease-in-out;
+   animation-delay:4s;
+   animation-duration:2s;
+}
+
+.result0 #bru-fill { animation-name: result0; }
+.result10 #bru-fill { animation-name: result10; }
+.result20 #bru-fill { animation-name: result20; }
+.result30 #bru-fill { animation-name: result30; animation-duration:2.5s; }
+.result40 #bru-fill { animation-name: result40; animation-duration:3s; }
+.result50 #bru-fill { animation-name: result50; animation-duration:3.5s; }
+.result60 #bru-fill { animation-name: result60; animation-duration:4s; }
+.result70 #bru-fill { animation-name: result70; animation-duration:4.5s; }
+.result80 #bru-fill { animation-name: result80; animation-duration:5s; }
+.result90 #bru-fill { animation-name: result90; animation-duration:5.5s; }
+.result100 #bru-fill { animation-name: result100; animation-duration:6s; }
+/* 490-50 */
+@keyframes result0 {
+  0% { top:520px; } 100% { top:490px; }
+}
+@keyframes result10 {
+  0% { top:520px; } 100% { top:450px; }
+}
+@keyframes result20 {
+  0% { top:520px; } 100% { top:410px; }
+}
+@keyframes result30 {
+  0% { top:520px; } 100% { top:370px; }
+}
+@keyframes result40 {
+  0% { top:520px; } 100% { top:330px; }
+}
+@keyframes result50 {
+  0% { top:520px; } 100% { top:290px; }
+}
+@keyframes result60 {
+  0% { top:520px; } 100% { top:250px; }
+}
+@keyframes result70 {
+  0% { top:520px; } 100% { top:200px; }
+}
+@keyframes result80 {
+  0% { top:520px; } 100% { top:150px; }
+}
+@keyframes result90 {
+  0% { top:520px; } 100% { top:100px; }
+}
+@keyframes result100 {
+  0% { top:520px; } 100% { top:50px; }
+}
+
+.results #result-text p,
+.questionHolder #headline p,
+.questionHolder .answers .answer {
+  color:#000;
+}
+.results #result-text p,
+.questionHolder #headline p,
+.questionHolder .answers .answer .caption {
+    text-shadow: 1px -1px rgba(255,255,255,0.5);
+}

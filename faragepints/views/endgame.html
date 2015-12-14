@@ -1,0 +1,14 @@
+<div ng-controller="GameOverController" class="faded-background">
+  <div id="panel-endgame">
+      <div class="score">
+          YOU DRANK<br />
+          {{ score + " " + (score==1 ? 'pint' : 'pints') }}
+      </div>
+      <div ng-include="'views/sharing.html'"></div>
+      <div class="playAgain playAgain" ng-click="playagain()">
+      </div>
+      <div class="showScores showScores" ng-click="gotoscores()">
+      </div>
+  </div>
+  <div class="drink-responsibly"></div>
+</div>

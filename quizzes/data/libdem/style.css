@@ -1,0 +1,155 @@
+:root {
+  --ui-color: #d7ad14;
+  --glow-color: #f6d90a;
+  --rosette-url: 'data/libdem/rosette-libdem.png';
+  --quiz-logo-url: 'data/libdem/logo-libdem.png';
+  --leader-url: 'data/libdem/clegg-libdem.png';
+  --button-bg-url: 'data/libdem/button.png';
+  --button-bg-hover-url: 'data/libdem/button-hover.png';
+  --result-panel-url: 'data/libdem/result-panel.png';
+  --headline-panel-url: 'data/snp/headline-panel.png';
+}
+
+/* Adjust for three buttons instead of two */
+
+.questionHolder .answers {
+  margin-top:745px;
+}
+
+.questionHolder .answers .answer {
+  line-height: 128px;
+  height:137px;
+  margin-bottom:8px;
+}
+
+.questionHolder .answers .answer label:before,
+.questionHolder .answers .answer label.on:before {
+  top:30px;
+}
+
+#garden > *, #garden > #fence-container * {
+  position:absolute;
+}
+
+#fence-container {
+  transform-origin: 409px 377px;
+}
+
+#fence {
+  width:468px;
+  height:396px;
+  left: 112px;
+  top: 89px;
+  background-image:url('data/libdem/fence.png');
+}
+
+.css3on #fence,.css3on #cat {
+  transform: translateY(-2000px);
+  transform-origin: 50% 100%;  
+  animation-name: dropInFencePlain;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+.filteron .css3on #fence,.filteron .css3on #cat {
+  animation-name: dropInFence;
+}
+.css3on #cat {
+  animation-delay: 4s;
+}
+
+@keyframes dropInFencePlain {
+  0% { transform: translateY(-2000px); }
+  95% { transform: translateY(0px); }
+  97.5% { transform: translateY(0px) scale(1.1,0.9); }
+  100% { transform: translateY(0px) scale(1);}
+}
+
+@keyframes dropInFence {
+  0% { transform: translateY(-2000px); filter:url("#motionBlur"); }
+  95% { transform: translateY(0px); filter:url("#motionBlur"); }
+  97.5% { transform: translateY(0px) scale(1.1,0.9); }
+  100% { transform: translateY(0px) scale(1);}
+}
+
+#fence-shadow {
+  width:418px;
+  height:72px;
+  left: 130px;
+  top: 456px;
+  background-image:url('data/libdem/fence-shadow.png');
+}
+
+.css3on #fence-shadow {
+  transform: scale(8);
+  animation-name: shrinkShadow;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes shrinkShadow {
+  0% { transform: scale(8);}
+  100% { transform: scale(1);}
+}
+
+#ground {
+  width:33px;
+  height:74px;
+  left: 285px;
+  top: 418px;
+  background-image:url('data/libdem/fence-grass.png');
+}
+
+.css3on #ground {
+  transform-origin: 50% 100%;
+  transform: scale(0);
+  animation-name: growGround;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes growGround {
+  0% { transform: scale(0);}
+  100% { transform: scale(1);}
+}
+
+#cat {
+  width:191px;
+  height:125px;
+  left: 340px;
+  top: 390px;
+  background-image:url('data/libdem/fence-cat.png');
+}
+
+.result0 #fence-container { transform: scale(0.1);  }
+.result10 #fence-container { transform: scale(0.2);  }
+.result20 #fence-container { transform: scale(0.3);  }
+.result30 #fence-container { transform: scale(0.4);  }
+.result40 #fence-container { transform: scale(0.5);  }
+.result50 #fence-container { transform: scale(0.6);  }
+.result60 #fence-container { transform: scale(0.7);  }
+.result70 #fence-container { transform: scale(0.8);  }
+.result80 #fence-container { transform: scale(0.9);  }
+.result90 #fence-container { transform: scale(1);  }
+.result100 #fence-container { transform: scale(1);  }
+
+.result0 #cat,
+.result10 #cat,
+.result20 #cat,
+.result30 #cat,
+.result40 #cat,
+.result50 #cat
+{
+  left:170px;
+}
+
+.result80 #cat {  left: 319px;
+  top: 251px;   }
+.result90 #cat {  left: 305px;
+  top: 57px;   }
+.result100 #cat {  left: 250px;  top: -25px;   }

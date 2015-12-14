@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            var utag_data = { stop_first_page_load : 'true' };
+        </script>
+        <script type="text/javascript">
+            (function(a,b,c,d){
+            a='//tags.tiqcdn.com/utag/newsinternational/thesun.nation/prod/utag.js';
+            b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+            a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+            })();
+        </script>
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="../common/fonts/avenir/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <meta property="fb:app_id" content="948806798497744" /> 
+        <meta property="og:type"   content="sn-eggheads:eggs"/> 
+
+        <meta property="og:url"         content="http://www.rekdev.com/thesun/eggheads/" /> 
+        <meta property="og:title"       content="#SunNation Eggheads" />
+        <meta property="og:image"       content="http://www.rekdev.com/thesun/eggheads/eggheads.png" /> 
+        <meta property="og:description" content="Eggheadb game description" /> 
+    </head>
+    <body ng-app="sunnation" ng-controller="MainController" ng-class="{touch: Modernizr.touch}">
+        <div id="game-container">
+            <div id="view-overlay">
+                <div id="preloader">
+                    <span id="progress-text">0%</div>
+                </div>
+                <a id="sunnation-logo" href="http://www.sunnation.co.uk"></a>
+                <canvas id="canvas-game"></canvas>
+                <div id="ui-choose"></div>
+                <div id="ui-change"></div>
+                <div id="ui-share-rect"></div>
+                <div id="ui-share-now"></div>
+                <div id="facebook-share" ng-click="shareToFB()"></div>
+                <div id="twitter-share" ng-click="shareToTwitter()"></div>
+                <div id="see-facebook"></div>
+                <div id="see-twitter"></div>
+                <div id="rosette-miliband-1" class="rosette-1"></div>
+                <div id="rosette-miliband-2" class="rosette-2" ng-click="changeLeader(1)"></div>
+                <div id="rosette-cameron-1" class="rosette-1"></div>
+                <div id="rosette-cameron-2" class="rosette-2" ng-click="changeLeader(2)"></div>
+                <div id="rosette-clegg-1" class="rosette-1"></div>
+                <div id="rosette-clegg-2" class="rosette-2" ng-click="changeLeader(3)"></div>
+                <div id="rosette-farage-1" class="rosette-1"></div>
+                <div id="rosette-farage-2" class="rosette-2" ng-click="changeLeader(4)"></div>
+                <div id="rosette-bennett-1" class="rosette-1"></div>
+                <div id="rosette-bennett-2" class="rosette-2" ng-click="changeLeader(5)"></div>
+                <div id="rosette-sturgeon-1" class="rosette-1"></div>
+                <div id="rosette-sturgeon-2" class="rosette-2" ng-click="changeLeader(6)"></div>
+                <div id="ui-hide" ng-click="closeText()"></div>
+                <textarea id="text-box" autocomplete="off" maxlength="110" placeholder="Write your text here..."></textarea>
+                <div id="post" ng-click="post()"></div>
+                <div id="orientation-overlay"></div>
+                <canvas id="canvas-off-screen"></canvas>
+            </div>
+        </div>
+        <script src="../common/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../common/browser-polyfill.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../common/modernizr.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../common/angular.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../common/angular-animate.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../common/angular-preload.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../common/preloadjs-0.6.0.combined.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../common/easeljs-0.8.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../common/tweenjs-0.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../common/soundjs-0.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../common/oauth.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/imagesharing.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/base64binary.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/Egg.js" type="text/javascript" charset="utf-8"></script>
+        <script src="app.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>

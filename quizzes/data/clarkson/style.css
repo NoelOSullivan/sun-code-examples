@@ -1,0 +1,106 @@
+:root {
+  --ui-color: #3f8428;
+  --glow-color: #3f8428;
+  --rosette-url: 'data/clarkson/rosette.png';
+  --quiz-logo-url: 'data/clarkson/logo.png';
+  --leader-url: 'data/clarkson/leader-torso.png';
+  --button-bg-url: 'data/clarkson/button.png';
+  --button-bg-hover-url: 'data/clarkson/button-hover.png';
+  --result-panel-url: 'data/clarkson/result-panel.png';
+  --headline-panel-url: 'data/clarkson/headline-panel.png';
+}
+
+.results #result-text p,
+.questionHolder #headline p,
+.questionHolder .answers .answer {
+  color:#FFF;
+}
+.results #result-text p,
+.questionHolder #headline p,
+.questionHolder .answers .answer .caption {
+    text-shadow: 1px -1px rgba(255,255,255,0.5);
+}
+
+.questionHolder .imageHolder {
+  background-image: url('data/clarkson/frame-back.png');
+  padding: 12px 16px; /* Substituted borders for padding */
+    border:none 0px transparent;
+}
+
+#start #leader-torso {
+  height:777px;
+  top:504px;
+}
+
+#scene {
+  position:absolute;
+  background-repeat:no-repeat;
+  top: 38px;
+  left: -152px;
+  overflow:hidden;
+  width:960px;
+  height:570px;
+  animation-fill-mode:forwards;
+}
+
+#speedo {
+  position:absolute;
+  background-image: url('data/clarkson/speedo.png');
+  top: 30px;
+  left: 230px;
+  width: 534px;
+  height: 455px;
+}
+
+#needle {
+  position:absolute;
+  background-image: url('data/clarkson/needle.png');
+  top: 120px;
+  left: 488px;
+  width: 21px;
+  height: 171px;
+  transform-origin: 10px 171px;
+  transform: rotate(-129deg);
+}
+
+#centre {
+  position:absolute;
+  background-image: url('data/clarkson/centre.png');
+  top: 268px;
+  left: 473px;
+  width: 49px;
+  height: 48px;
+  transform-origin: 25px 25px;
+}
+
+/*-129 to 129 */
+
+.css3on #needle {
+  animation: needleTurn00 2s ease-out 5s;
+  animation-fill-mode:forwards;
+}
+
+.result0 #needle { animation-name: needleTurn00; }
+.result10 #needle { animation-name: needleTurn01; }
+.result20 #needle { animation-name: needleTurn02; }
+.result30 #needle { animation-name: needleTurn03; }
+.result40 #needle { animation-name: needleTurn04; }
+.result50 #needle { animation-name: needleTurn05; }
+.result60 #needle { animation-name: needleTurn06; }
+.result70 #needle { animation-name: needleTurn07; }
+.result80 #needle { animation-name: needleTurn08; }
+.result90 #needle { animation-name: needleTurn09; }
+.result100 #needle { animation-name: needleTurn10; }
+
+@keyframes needleTurn00 {}
+@keyframes needleTurn01 { 0% { transform: rotate(-129); } 100% { transform: rotate(-103deg); } }
+@keyframes needleTurn02 { 0% { transform: rotate(-129); } 100% { transform: rotate(-77deg); } }
+@keyframes needleTurn03 { 0% { transform: rotate(-129); } 100% { transform: rotate(-51deg); } }
+@keyframes needleTurn04 { 0% { transform: rotate(-129); } 100% { transform: rotate(-25deg); } }
+@keyframes needleTurn05 { 0% { transform: rotate(-129); } 100% { transform: rotate(0deg); } }
+@keyframes needleTurn06 { 0% { transform: rotate(-129); } 100% { transform: rotate(25deg); } }
+@keyframes needleTurn07 { 0% { transform: rotate(-129); } 100% { transform: rotate(51deg); } }
+@keyframes needleTurn08 { 0% { transform: rotate(-129); } 100% { transform: rotate(77deg); } }
+@keyframes needleTurn09 { 0% { transform: rotate(-129); } 100% { transform: rotate(103deg); } }
+@keyframes needleTurn10 { 0% { transform: rotate(-129); } 100% { transform: rotate(129deg); } }
+

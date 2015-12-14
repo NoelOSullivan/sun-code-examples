@@ -1,0 +1,106 @@
+:root {
+  --ui-color: #951ad1;
+  --glow-color: #c415f5;
+  --rosette-url: 'data/ukip/rosette-ukip.png';
+  --quiz-logo-url: 'data/ukip/logo-ukip.png';
+  --leader-url: 'data/ukip/farage-torso.png';
+  --button-bg-url: 'data/ukip/button.png';
+  --button-bg-hover-url: 'data/ukip/button-hover.png';
+  --result-panel-url: 'data/ukip/result-panel.png';
+  --headline-panel-url: 'data/snp/headline-panel.png';
+}
+
+#results-container {
+  position:relative;
+  width:700px;
+  height:888px;
+  background-image: url('data/ukip/rosette-beer-empty.png');
+  background-position: 265px 153px;
+  background-repeat: no-repeat;
+}
+
+#beer-fill-container {
+   position:absolute;
+   overflow:hidden;
+   top:130px;
+   left:230px;
+   width:240px;
+   height:400px;
+}
+
+#beer-fill {
+   position:absolute;
+   background-image: url('data/ukip/beer-fill.png');
+   left:23px;
+   top:320px;
+   width:171px;
+   height:339px;
+   animation-fill-mode: forwards;
+   animation-timing-function: ease-in-out;
+   animation-delay:4s;
+   animation-duration:2s;
+}
+
+#beer-mask {
+  position:absolute;
+  top:130px;
+  left:230px;
+   width:240px;
+    height:400px;
+    background-image: url('data/ukip/rosette-beer-cutout.png');
+}
+
+#beer-overlay {
+  position:absolute;
+   background-image: url('data/ukip/rosette-beer-bubbles.png');
+   left: 262px;
+   top: 157px;
+   width:173px;
+   height:365px;
+}
+
+.result0 #beer-fill { animation-name: result0; }
+.result10 #beer-fill { animation-name: result10; }
+.result20 #beer-fill { animation-name: result20; }
+.result30 #beer-fill { animation-name: result30; animation-duration:2.5s; }
+.result40 #beer-fill { animation-name: result40; animation-duration:3s; }
+.result50 #beer-fill { animation-name: result50; animation-duration:3.5s; }
+.result60 #beer-fill { animation-name: result60; animation-duration:4s; }
+.result70 #beer-fill { animation-name: result70; animation-duration:4.5s; }
+.result80 #beer-fill { animation-name: result80; animation-duration:5s; }
+.result90 #beer-fill { animation-name: result90; animation-duration:5.5s; }
+.result100 #beer-fill { animation-name: result100; animation-duration:6s; }
+
+@keyframes result0 {
+  0% { top:320px; } 100% { top:295px; }
+}
+@keyframes result10 {
+  0% { top:320px; } 100% { top:275px; }
+}
+@keyframes result20 {
+  0% { top:320px; } 100% { top:250px; }
+}
+@keyframes result30 {
+  0% { top:320px; } 100% { top:230px; }
+}
+@keyframes result40 {
+  0% { top:320px; } 100% { top:200px; }
+}
+@keyframes result50 {
+  0% { top:320px; } 100% { top:160px; }
+}
+@keyframes result60 {
+  0% { top:320px; } 100% { top:130px; }
+}
+@keyframes result70 {
+  0% { top:320px; } 100% { top:100px; }
+}
+@keyframes result80 {
+  0% { top:320px; } 100% { top:70px; }
+}
+@keyframes result90 {
+  0% { top:320px; } 100% { top:38px; }
+}
+@keyframes result100 {
+  0% { top:320px; } 100% { top:8px; }
+}

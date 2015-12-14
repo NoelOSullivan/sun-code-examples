@@ -1,0 +1,10 @@
+<div class="results unselectable {{ range.code }}" ng-app="sunnation" ng-controller="ResultsController" id="results">
+  <div id="play-next" ng-click="playNext()" ng-bind="playNextCaption"></div>
+  <div id="result-text">
+    <p>{{ resultTemplate() }}</p>
+  </div>
+  <div id="share-buttons">
+    <div class="fbShare interactive unselectable" ng-click="facebookShare()"></div>
+    <a ng-href="{{ twitterLink }}" target="_blank" class="button-twitter unselectable" title="Share on Twitter" ng-click="twitterClick()">&nbsp;</a>
+  </div>
+</div>

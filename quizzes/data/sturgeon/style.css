@@ -1,0 +1,274 @@
+:root {
+  --ui-color: #3f8428;
+  --glow-color: #3f8428;
+  --rosette-url: 'data/sturgeon/rosette.png';
+  --quiz-logo-url: 'data/sturgeon/logo.png';
+  --leader-url: 'data/sturgeon/leader-torso.png';
+  --button-bg-url: 'data/sturgeon/button.png';
+  --button-bg-hover-url: 'data/sturgeon/button-hover.png';
+  --result-panel-url: 'data/sturgeon/result-panel.png';
+  --headline-panel-url: 'data/sturgeon/headline-panel.png';
+}
+
+.questionHolder .imageHolder {
+  background-image: url('data/sturgeon/frame-back.png');
+  padding: 12px 16px; /* Substituted borders for padding */
+  border:none 0px transparent;
+}
+
+#start #leader-torso {
+  height:777px;
+  top:504px;
+}
+
+#scene, #scene > * {
+  position:absolute;
+  background-repeat:no-repeat;
+  animation-fill-mode:forwards;
+}
+
+#scene-container {
+  position:absolute;
+  top: -50px;
+  left: -150px;
+  overflow:hidden;
+  width:960px;
+  height:570px;
+}
+
+#scene {
+  top: 190px;
+  left: 0px;
+}
+
+#rod {
+  position:absolute;
+  background-image: url('data/sturgeon/rod.png');
+  top: -193px;
+  left: 0px;
+  width: 491px;
+  height: 519px;
+}
+
+#line {
+  position:absolute;
+  background-image: url('data/sturgeon/line.png');
+  top: -210px;
+  left: 480px;
+  width: 2px;
+  height: 644px;
+}
+
+#hook {
+  position:absolute;
+  background-image: url('data/sturgeon/hook.png');
+  top: 410px;
+  left: 455px;
+  width: 45px;
+  height: 90px;
+}
+
+#fish {
+  position:absolute;
+  background-image: url('data/sturgeon/fish.png');
+  top: 480px;
+  left: 440px;
+  width: 162px;
+  height: 506px;
+}
+
+#piranha {
+  position:absolute;
+  background-image: url('data/sturgeon/piranha.png');
+  top: 480px;
+  left: 430px;
+  width: 135px;
+  height: 164px;
+}
+
+#nemo {
+  position:absolute;
+  background-image: url('data/sturgeon/nemo.png');
+  top: 480px;
+  left: 440px;
+  width: 89px;
+  height: 111px;
+}
+
+#crab {
+  position:absolute;
+  background-image: url('data/sturgeon/crab.png');
+  top: 480px;
+  left: 400px;
+  width: 207px;
+  height: 127px;
+}
+
+#boot {
+  position:absolute;
+  background-image: url('data/sturgeon/boot.png');
+  top: 480px;
+  left: 375px;
+  width: 224px;
+  height: 197px;
+}
+
+.css3on #line {
+  animation: lineRise 3s ease-out 4s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes lineRise {
+  0% { top: -210px; }
+  100% { top: -620px; }
+}
+
+.css3on #hook {
+  animation: hookRise 3s ease-out 4s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes hookRise {
+  0% { top: 410px; }
+  100% { top: 0px; }
+}
+
+/*------------------------------------------------*/
+
+.css3on #fish {
+  animation: fishRise 3s ease-out 4s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes fishRise {
+  0% { top: 480px; }
+  100% { top: 70px; }
+}
+
+/*------------------------------------------------*/
+
+.css3on #piranha {
+  animation: piranhaRise 3s ease-out 4s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes piranhaRise {
+  0% { top: 480px; }
+  100% { top: 70px; }
+}
+
+/*------------------------------------------------*/
+
+.css3on #nemo {
+  animation: nemoRise 3s ease-out 4s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes nemoRise {
+  0% { top: 480px; }
+  100% { top: 70px; }
+}
+
+/*------------------------------------------------*/
+
+.css3on #crab {
+  animation: crabRise 3s ease-out 4s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes crabRise {
+  0% { top: 480px; }
+  100% { top: 70px; }
+}
+
+/*------------------------------------------------*/
+
+.css3on #boot {
+  animation: bootRise 3s ease-out 4s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes bootRise {
+  0% { top: 480px; }
+  100% { top: 70px; }
+}
+
+/*------------------------------------------------*/
+
+.result0 #crab,
+.result0 #nemo,
+.result0 #piranha,
+.result0 #fish {
+  display:none;
+}
+
+.result10 #crab,
+.result10 #nemo,
+.result10 #piranha,
+.result10 #fish {
+  display:none;
+}
+
+.result20 #crab,
+.result20 #nemo,
+.result20 #piranha,
+.result20 #fish {
+  display:none;
+}
+
+.result30 #boot,
+.result30 #nemo,
+.result30 #piranha,
+.result30 #fish {
+  display:none;
+}
+
+.result40 #boot,
+.result40 #nemo,
+.result40 #piranha,
+.result40 #fish {
+  display:none;
+}
+
+.result50 #boot,
+.result50 #crab,
+.result50 #piranha,
+.result50 #fish {
+  display:none;
+}
+
+.result60 #boot,
+.result60 #crab,
+.result60 #piranha,
+.result60 #fish {
+  display:none;
+}
+
+.result70 #boot,
+.result70 #crab,
+.result70 #nemo,
+.result70 #fish {
+  display:none;
+}
+
+.result80 #boot,
+.result80 #crab,
+.result80 #nemo,
+.result80 #fish {
+  display:none;
+}
+
+.result90 #boot,
+.result90 #crab,
+.result90 #nemo,
+.result90 #piranha {
+  display:none;
+}
+
+.result100 #boot,
+.result100 #crab,
+.result100 #nemo,
+.result100 #piranha {
+  display:none;
+}
+

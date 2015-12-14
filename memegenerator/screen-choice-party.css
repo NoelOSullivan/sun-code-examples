@@ -1,0 +1,472 @@
+:root {
+  --green-meme-color: #97ff80;
+  --libdem-meme-color: #e8a341;
+  --ukip-meme-color: #9a5de8;
+  --labour-meme-color: #ff5757;
+  --tory-meme-color: #52c0ff;
+  /*-------------------------------*/
+  --green-meme-text-color: #79cc66;
+  --libdem-meme-text-color: #ba8234;
+  --ukip-meme-text-color: #7b4aba;
+  --labour-meme-text-color: #cc4646;
+  --tory-meme-text-color: #429acc;
+  /*-------------------------------*/
+  --green-meme-shadow-color: #c4f9b9;
+  --libdem-meme-shadow-color: #ffd69d;
+  --ukip-meme-shadow-color: #c49cf8;
+  --labour-meme-shadow-color: #ffafaf;
+  --tory-meme-shadow-color: #b9e5ff;
+}
+
+#screen-choice{
+  visibility: hidden;
+  overflow:hidden;
+}
+
+/*-------------------------------------SLEEVES*/ 
+
+.sleeve {
+  position: absolute;
+  top: 0px;
+  width: 1290px;
+  height: 960px;
+  /*background-color: white;*/
+}
+
+.ukip-sleeve{
+  left: -880px;
+}
+
+.tory-sleeve{
+  left: -960px;
+}
+
+.green-sleeve{
+  left: -1040px;
+}
+
+.libdem-sleeve{
+  left: -1120px;
+}
+
+.labour-sleeve{
+  left: -1200px;
+}
+
+.inside-sleeve{
+  position: absolute;
+  width: 1280px;
+  height: 960px;
+}
+
+.ukip-inside-sleeve {
+  background-color: var(--ukip-meme-color);
+}
+
+.tory-inside-sleeve {
+  background-color: var(--tory-meme-color);
+}
+
+.green-inside-sleeve {
+  background-color: var(--green-meme-color);
+}
+
+.libdem-inside-sleeve {
+  background-color: var(--libdem-meme-color);
+}
+
+.labour-inside-sleeve {
+  background-color: var(--labour-meme-color);
+}
+
+.thumb{
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  top:450px;
+  left:1280px;
+}
+
+.labour-thumb {
+  background-color: var(--labour-meme-color);
+}
+
+.libdem-thumb {
+  background-color: var(--libdem-meme-color);
+}
+
+.green-thumb {
+  background-color: var(--green-meme-color);
+}
+
+.tory-thumb {
+  background-color: var(--tory-meme-color);
+}
+
+.ukip-thumb {
+  background-color: var(--ukip-meme-color);
+}
+
+.thumb-line{
+  position: absolute;
+  width: 2px;
+  height:30px;
+  top:455px;
+}
+
+.thumb-line1{
+  left:1286px;
+}
+
+.thumb-line2{
+  left:1282px;
+}
+
+/*-------------------------------------VERTICAL LINES*/ 
+
+.vertical-line{
+  position: absolute;
+  width: 2px;
+  height:660px;
+  left:1197px;
+  top:150px;
+}
+
+.vertical-line2{
+  position: absolute;
+  width: 2px;
+  height:660px;
+  left:315px;
+  top:150px;
+}
+
+.v-line-ukip {
+  background-color: var(--ukip-meme-text-color);
+  box-shadow: -1px -1px 0px var(--ukip-meme-shadow-color);
+}
+
+.v-line-tory {
+  background-color: var(--tory-meme-text-color);
+  box-shadow: -1px -1px 0px var(--tory-meme-shadow-color);
+}
+
+.v-line-green {
+  background-color: var(--green-meme-text-color);
+  box-shadow: -1px -1px 0px var(--green-meme-shadow-color);
+}
+
+.v-line-libdem {
+  background-color: var(--libdem-meme-text-color);
+  box-shadow: -1px -1px 0px var(--libdem-meme-shadow-color);
+}
+
+.v-line-labour {
+  background-color: var(--labour-meme-text-color);
+  box-shadow: -1px -1px 0px var(--labour-meme-shadow-color);
+}
+
+.sleeve-click {
+  position: absolute;;
+  width: 85px;
+  height: 960px;
+  left:1195px;
+  top:0px;
+  cursor:pointer;
+}
+
+/*-------------------------------------TEXT PNGS*/ 
+
+.pick-party{
+  background-image: url("images/screen-choice/pick-your-party.png");
+  position: absolute;
+  left:420px;
+  top:400px;
+  width: 222px;
+  height:153px;
+}
+
+.pick-op{
+  background-image: url("images/screen-choice/pick-your-op.png");
+  position: absolute;
+  left:730px;
+  top:400px;
+  width: 215px;
+  height:144px;
+}
+
+/*-------------------------------------SLEEVE PHOTOS*/ 
+
+.s-photo{
+  position: absolute;
+  left: 915px;
+  width: 250px;
+  height: 314px;
+}
+
+.s-photo-top{
+  top: 150px;
+}
+
+.s-photo-bg-top{
+  background-color: white;
+  position: absolute;
+  width: 250px;
+  height: 284px;
+}
+
+.s-photo-bottom{
+  top: 493px;
+}
+
+.s-photo-bg-bottom{
+  background-color: white;
+  position: absolute;
+  width: 250px;
+  height: 284px;
+  top: 30px;
+}
+
+.s-photo-image {
+  background-color: black;
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  cursor:pointer;
+}
+
+.s-photo-image-top {
+  left:5px;
+  top:5px;
+}
+
+.s-photo-image-bottom {
+  left:5px;
+  top:70px;
+}
+
+.s-photo-tri{
+  background-color: white;
+  position: absolute;
+  width:60px;
+  height:60px;
+  transform: scale(1,0.8) rotate(45deg);
+}
+
+.s-photo-tri-top{
+  left:100px;
+  top:250px;
+}
+
+.s-photo-tri-bottom{
+  left:100px;
+  top:0px;
+}
+
+.s-photo-num {
+  position:absolute;
+  width:50px;
+  height:50px;
+  text-align: center;
+  font-size:40px;
+  font-family: "Avenir Next LT Pro Heavy Condensed";
+  user-select: none;
+  cursor:default;
+}
+
+.s-photo-num-ukip{
+  color: var(--ukip-meme-text-color);
+}
+
+.s-photo-num-tory{
+  color: var(--tory-meme-text-color);
+}
+
+.s-photo-num-green{
+  color: var(--green-meme-text-color);
+}
+
+.s-photo-num-libdem{
+  color: var(--libdem-meme-text-color);
+}
+
+.s-photo-num-labour{
+  color: var(--labour-meme-text-color);
+}
+
+.s-photo-num-top {
+  left:105px;
+  top:255px;
+}
+
+.s-photo-num-bottom {
+  left:105px;
+  top:20px;
+}
+
+/*-------------------------------------SLEEVE TEXT*/ 
+
+.sleeve-text {
+  position:absolute;
+  left:1055px;
+  top:450px;
+  width:400px;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-size:40px;
+  font-family: "Avenir Next LT Pro Heavy Condensed";
+  user-select: none;
+  cursor:default;
+  transform: rotate(-90deg);
+}
+
+.labour-text {
+  color: var(--labour-meme-text-color);
+  text-shadow: 1px -1px var(--labour-meme-shadow-color);
+}
+
+.libdem-text {
+  color: var(--libdem-meme-text-color);
+  text-shadow: 1px -1px var(--libdem-meme-shadow-color);
+}
+
+.green-text {
+  color: var(--green-meme-text-color);
+  text-shadow: 1px -1px var(--green-meme-shadow-color);
+}
+
+.tory-text {
+  color: var(--tory-meme-text-color);
+  text-shadow: 1px -1px var(--tory-meme-shadow-color);
+}
+
+.ukip-text {
+  color: var(--ukip-meme-text-color);
+  text-shadow: 1px -1px var(--ukip-meme-shadow-color);
+}
+
+/*-------------------------------------IMPORT AND CAMERA BUTTONS*/ 
+
+#get-photo-choice {
+  position:absolute;
+  left:800px;
+  top:120px;
+  width:400px;
+  height:750px;
+  margin: 0px;
+}
+
+.small-camera{
+  background-image: url("images/screen-choice/camera-small.png");
+  position:absolute;
+  left: 80px;
+  top: 50px;
+  width: 240px;
+  height: 184px;
+}
+
+.small-flash {
+  background-image: url("images/screen-choice/flash-small.png");
+  position:absolute;
+  left: 191px;
+  top: 16px;
+  width: 39px;
+  height: 29px;
+}
+
+.choose-your-photo {
+  background-image: url("images/screen-choice/choose-your-photo.png");
+  position:absolute;
+  top: 240px;
+  left: 170px;
+  width: 43px;
+  height: 91px;
+}
+
+#take-text {
+  background-image: url("images/screen-choice/take-text.png");
+  position:absolute;
+  top: 340px;
+  left: 70px;
+  width: 252px;
+  height: 47px;
+}
+
+#existing-text {
+  background-image: url("images/screen-choice/existing-text.png");
+  position:absolute;
+  top: 520px;
+  left: -20px;
+  width: 439px;
+  height: 47px;
+}
+
+.image-button {
+  background-color: #c41316;
+  position: absolute;
+  left: 80px;
+  width: 240px;
+  height: 80px;
+  box-shadow: 4.95px 4.95px 0px 0px rgba( 0, 0, 0, 0.3 );
+  cursor:pointer;
+}
+
+.camera-button {
+  top: 400px;
+}
+
+label.myLabelDisk input[type="file"] {
+    position: fixed;
+    top: -1000px;
+}
+
+.myLabelDisk {
+  background-color: #c41316;
+  position: absolute;
+  left: 80px;
+  top: 580px;
+  width: 240px;
+  height: 80px;
+  box-shadow: 4.95px 4.95px 0px 0px rgba( 0, 0, 0, 0.3 );
+  cursor:pointer;
+}
+
+label.myLabelPhoto input[type="file"] {
+    position: fixed;
+    top: -1000px;
+}
+
+.myLabelPhoto {
+  background-color: #c41316;
+  position: absolute;
+  left: 80px;
+  top: 400px;
+  width: 240px;
+  height: 80px;
+  box-shadow: 4.95px 4.95px 0px 0px rgba( 0, 0, 0, 0.3 );
+  cursor:pointer;
+}
+
+.text-buttons {
+  position: absolute;
+  top:20px;
+  color:#FFFFFF;
+  font-size:40px;
+  font-family: "Avenir Next LT Pro Heavy Condensed";
+  text-shadow: -2px -2px black;
+  user-select: none;
+  cursor:default;
+  cursor:pointer;
+}
+
+.text-camera {
+  left:52px;
+}
+
+.text-disk {
+  left:50px;
+}
+
+.text-touchphoto {
+  left:70px;
+}

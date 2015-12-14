@@ -1,0 +1,99 @@
+:root {
+  --green-color: #97ff80;
+  --libdem-color: #e8a341;
+  --ukip-color: #9a5de8;
+  --labour-color: #ff5757;
+  --tory-color: #52c0ff;
+}
+
+body {
+  overflow:hidden;
+}
+
+#game-container {
+  position:absolute;
+}
+
+#view-overlay { 
+  position:relative;
+  width:1280px;
+  height:960px;
+  background-image: url("images/background.png");
+  overflow:hidden;
+}
+
+#orientation-overlay {
+  position:absolute;
+  background-image: url('images/overlay-orientation.png');
+  width:568px;
+  height:568px;
+  left:356px;
+  top:196px;
+  z-index:50;
+  display: none;
+}
+
+@media all and (orientation: portrait) {
+    #orientation-overlay {
+        display: block;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------- screen-start */
+
+#screen-start {
+  position:relative;
+  background-image: url("images/screen-start/home-screen.png");
+  left:0px;
+  top:0px;
+  /*cursor:pointer;*/
+}
+
+#photo-booth {
+  background-image: url("images/screen-start/home-screen.png");
+  position:absolute;
+  width: 1280px;
+  height: 960px;
+}
+
+#start-button {
+  background-image: url("images/screen-start/start-button-hover.png");
+  position: absolute;
+  left: 520px;
+  top: 719px;
+  width: 245px;
+  height: 85px;
+  cursor:pointer;
+  opacity:0;
+}
+
+#start-button-hover {
+  background-image: url("images/screen-start/start-button.png");
+  position: absolute;
+  left: 520px;
+  top: 719px;
+  width: 245px;
+  height: 85px;
+  opacity:0;
+}
+
+/* ------------------------------------------------------------------------------------------------- screen-choice */
+
+/* CANVAS */
+
+/*#canvas-wrapper {
+  position:relative;
+  left:340px;
+  top:180px;
+  width:600px;
+  height:600px;
+  background-color: #FF0000;
+  visibility:hidden;
+}
+
+#canvas {
+}
+
+#webcam {
+  visibility: hidden;
+}*/

@@ -1,0 +1,95 @@
+:root {
+  --ui-color: #951ad1;
+  --glow-color: #c415f5;
+  --rosette-url: 'data/royalbaby/rosette-baby.png';
+  --quiz-logo-url: 'data/royalbaby/logo-baby.png';
+  --leader-url: 'data/royalbaby/parents-torso.png';
+  --button-bg-url: 'data/royalbaby/button.png';
+  --button-bg-hover-url: 'data/royalbaby/button-hover.png';
+  --result-panel-url: 'data/royalbaby/result-panel.png';
+  --headline-panel-url: 'data/royalbaby/headline-panel.png';
+}
+
+#start #leader-torso {
+  height:520px;
+  top:750px;
+  height:543px;
+}
+
+#scene {
+  position: absolute;
+  overflow: hidden;
+  /*background-color: #FFF;
+  opacity: 0.5;*/
+  top:130px;
+  left:270px;
+  width:163px;
+  height:390px;
+}
+
+#milk-hole {
+   position:absolute;
+   background-image: url('data/royalbaby/milk-hole.png');
+   width:163px;
+   height:390px;
+}
+
+#milk-full {
+   position:absolute;
+   background-image: url('data/royalbaby/milk-full.png');
+   /*top:95px;*/
+   top:385px;
+   left:20px;
+   width:124px;
+   height:290px;
+   animation-fill-mode: forwards;
+   animation-timing-function: ease-in-out;
+   animation-delay:4s;
+   animation-duration:2s;
+}
+
+.result0 #milk-full { animation-name: result0; }
+.result10 #milk-full { animation-name: result10; }
+.result20 #milk-full { animation-name: result20; }
+.result30 #milk-full { animation-name: result30; animation-duration:2.5s; }
+.result40 #milk-full { animation-name: result40; animation-duration:3s; }
+.result50 #milk-full { animation-name: result50; animation-duration:3.5s; }
+.result60 #milk-full { animation-name: result60; animation-duration:4s; }
+.result70 #milk-full { animation-name: result70; animation-duration:4.5s; }
+.result80 #milk-full { animation-name: result80; animation-duration:5s; }
+.result90 #milk-full { animation-name: result90; animation-duration:5.5s; }
+.result100 #milk-full { animation-name: result100; animation-duration:6s; }
+
+@keyframes result0 {
+  0% { top:385px; } 100% { top:365px; }
+}
+@keyframes result10 {
+  0% { top:385px; } 100% { top:335px; }
+}
+@keyframes result20 {
+  0% { top:385px; } 100% { top:330px; }
+}
+@keyframes result30 {
+  0% { top:385px; } 100% { top:300px; }
+}
+@keyframes result40 {
+  0% { top:385px; } 100% { top:270px; }
+}
+@keyframes result50 {
+  0% { top:385px; } 100% { top:240px; }
+}
+@keyframes result60 {
+  0% { top:385px; } 100% { top:210px; }
+}
+@keyframes result70 {
+  0% { top:385px; } 100% { top:180px; }
+}
+@keyframes result80 {
+  0% { top:385px; } 100% { top:150px; }
+}
+@keyframes result90 {
+  0% { top:385px; } 100% { top:120px; }
+}
+@keyframes result100 {
+  0% { top:385px; } 100% { top:95px; }
+}

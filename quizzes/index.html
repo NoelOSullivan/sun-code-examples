@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# sn-quizzes: http://ogp.me/ns/fb/sn-quizzes#">
+<script type="text/javascript">
+var utag_data ={ stop_first_page_load : 'true' };
+</script>
+<script type="text/javascript">
+    (function(a,b,c,d){
+    a='//tags.tiqcdn.com/utag/newsinternational/thesun.nation/prod/utag.js';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+</script>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="main.css" id="PartyStyle">
+    <link rel="stylesheet" type="text/css" href="../common/fonts/avenir/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta property="fb:app_id" content="1428351830791950" /> 
+  <meta property="og:type"   content="sn-quizzes:quiz" /> 
+<meta property="og:url" content="http://www.sunnation.co.uk/sunnation/games/quizzes/index-ukip.html">
+<meta property="og:description" content="Take SunNation's 'How UKIP are you?' quiz">
+<meta property="og:image" content="http://www.sunnation.co.uk/sunnation/games/quizzes/data/ukip/cover-pic.png">
+<meta property="og:title" content="How UKIP are you?">
+<meta property="sn-quizzes:test_factor" content="UKIP">
+
+</head>
+<body ng-app="sunnation" ng-controller="BaseController" ng-class="{ css3on: Modernizr.csstransitions && Modernizr.cssanimations }">
+<div class="scaleWrapper {{ resultClass }}">
+    <div id="game-container" ng-class="{'in-game': inGame, 'end-game': endGame}">
+        <div id="view-overlay">
+            <div id="view-container" ng-include="uiTemplate"></div>
+            <div id="party-rosette-logo">
+                <div id="quiz-logo"></div>
+            </div>
+            <div id="results-container" ng-if="endGame" ng-include="endTemplate">
+            </div>
+            <a id="sunnation-logo" href="http://www.sunnation.co.uk"></a>
+        </div>
+    </div>
+</div>
+<script src="../common/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../common/modernizr.js" type="text/javascript" charset="utf-8"></script>
+<script src="../common/util.js" type="text/javascript" charset="utf-8"></script>
+<script src="../common/browser-polyfill.js" type="text/javascript" charset="utf-8"></script>
+<script src="../common/angular.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../common/angular-ui-router.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../common/angular-preload.js" type="text/javascript" charset="utf-8"></script>
+<script src="../common/ngFacebook.js" type="text/javascript" charset="utf-8"></script>
+<script src="config.js" type="text/javascript" charset="utf-8" id="ConfigScript"></script>
+<script src="app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+:root {
+  --ui-color: #3f8428;
+  --glow-color: #3f8428;
+  --rosette-url: 'data/hopkins/rosette.png';
+  --quiz-logo-url: 'data/hopkins/logo.png';
+  --leader-url: 'data/hopkins/leader-torso.png';
+  --button-bg-url: 'data/hopkins/button.png';
+  --button-bg-hover-url: 'data/hopkins/button-hover.png';
+  --result-panel-url: 'data/hopkins/result-panel.png';
+  --headline-panel-url: 'data/hopkins/headline-panel.png';
+}
+
+.results #result-text p,
+.questionHolder #headline p,
+.questionHolder .answers .answer {
+  color:#000;
+}
+.results #result-text p,
+.questionHolder #headline p,
+.questionHolder .answers .answer .caption {
+    text-shadow: 1px -1px rgba(255,255,255,0.5);
+}
+
+.questionHolder .imageHolder {
+  background-image: url('data/hopkins/frame-back.png');
+  padding: 12px 16px; /* Substituted borders for padding */
+    border:none 0px transparent;
+}
+
+#start #leader-torso {
+  height:777px;
+  top:504px;
+}
+
+#katie > *, #katie-head > * {
+  position:absolute;
+  background-repeat:no-repeat;
+  animation-fill-mode: forwards;
+}
+
+#flames {
+  background-image: url('data/hopkins/katie-fire.png');
+  transform-origin: 254px 191px;
+  width:497px;
+  height:229px;
+  left: 104px;
+  top: 340px;
+}
+#katie-head {
+  background-image: url('data/hopkins/katie-head.png');
+  transform-origin: 234px 355px;
+  width:451px;
+  height:547px;
+  left: 136px;
+  top: 70px;
+}
+#katie-head-red {
+  background-image: url('data/hopkins/katie-head-red.png');
+  transform-origin: 234px 355px;
+  width:451px;
+  height:547px;
+  left:0px;
+  top:0px;
+  opacity:0;
+  transition:opacity 2s ease-in-out 6s;
+}
+#horn-left {
+  background-image: url('data/hopkins/katie-horn-left.png');
+  transform-origin: 21px 78px;
+  width:70px;
+  height:95px;
+  left: 77px;
+  top: -4px;
+}
+#horn-right {
+  background-image: url('data/hopkins/katie-horn-right.png');
+  transform-origin: 53px 78px;
+  width:70px;
+  height:94px;
+  left: 268px;
+  top: -4px;
+}
+
+.css3on #katie-head {
+  transform: scale(0.1) translate(0,400px);
+  opacity:0;
+  animation-name: headZoom;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-timing-function:linear;
+}
+
+.css3on #flames {
+  transform: scale(0.5, 0.1);
+  opacity:0;
+  animation-name: fireBurn;
+  animation-duration: 1s;
+  animation-delay: 3.5s;
+  animation-timing-function:linear;
+}
+
+@keyframes headZoom {
+  0%   { transform: scale(0.1) translate(0,400px); opacity:0;}
+  50%  { transform: scale(0.5) translate(0,-400px); opacity:1;}
+  51%  { transform: scale(0.5) translate(0,-400px); opacity:1;}
+  100% { transform: scale(1) translate(0,0); opacity:1;}  
+}
+
+@keyframes fireBurn {
+  0% { transform: scale(0.5, 0.1); opacity:0; }
+  50% { transform: scale(0.8, 0.3); opacity:0.5; }
+  100% { transform: scale(1, 1); opacity:1; }
+}
+
+.css3on .horn {
+  transform:scale(0);
+  transition: transform 2s ease-in-out 5s;
+}
+
+.result0 #katie-head-red { opacity:0; }
+.result10 #katie-head-red { opacity:0.1; }
+.result20 #katie-head-red { opacity:0.2; }
+.result30 #katie-head-red { opacity:0.3; }
+.result40 #katie-head-red { opacity:0.4; }
+.result50 #katie-head-red { opacity:0.5; }
+.result60 #katie-head-red { opacity:0.6; }
+.result70 #katie-head-red { opacity:0.7; }
+.result80 #katie-head-red { opacity:0.8; }
+.result90 #katie-head-red { opacity:0.9; }
+.result100 #katie-head-red { opacity:1; }
+
+.result0 #katie-head .horn { transform:scale(0); transition: transform 2s ease-in-out 5s;}
+.result10 #katie-head .horn { transform:scale(0.1); transition: transform 2s ease-in-out 5s;}
+.result20 #katie-head .horn { transform:scale(0.2); transition: transform 2s ease-in-out 5s;}
+.result30 #katie-head .horn { transform:scale(0.3); transition: transform 2s ease-in-out 5s;}
+.result40 #katie-head .horn { transform:scale(0.4); transition: transform 2s ease-in-out 5s;}
+.result50 #katie-head .horn { transform:scale(0.5); transition: transform 2s ease-in-out 5s;}
+.result60 #katie-head .horn { transform:scale(0.6); transition: transform 2s ease-in-out 5s;}
+.result70 #katie-head .horn { transform:scale(0.7); transition: transform 2s ease-in-out 5s;}
+.result80 #katie-head .horn { transform:scale(0.8); transition: transform 2s ease-in-out 5s;}
+.result90 #katie-head .horn { transform:scale(0.9); transition: transform 2s ease-in-out 5s;}
+.result100 #katie-head .horn { transform:scale(1); transition: transform 2s ease-in-out 5s;}

@@ -1,0 +1,152 @@
+:root {
+  --ui-color: #31ba30;
+  --glow-color: #33e732;
+  --rosette-url: 'data/greenmanifesto/rosette-green.png';
+  --quiz-logo-url: 'data/greenmanifesto/logo-green.png';
+  --leader-url: 'data/greenmanifesto/natalie-green.png';
+  --button-bg-url: 'data/greenmanifesto/button.png';
+  --button-bg-hover-url: 'data/greenmanifesto/button-hover.png';
+  --result-panel-url: 'data/greenmanifesto/result-panel.png';
+  --headline-panel-url: 'data/greenmanifesto/headline-panel.png';
+}
+
+.end-game #results-container {
+  animation-duration: 0.1s;
+  animation-delay: 3s;
+}
+
+#plant > * {
+  position:absolute;
+  background-repeat:no-repeat;
+  animation-fill-mode:forwards;
+}
+
+#plant-ground {
+  background-image: url('data/greenmanifesto/plant-ground.png');  
+  width:145px;
+  height:37px;
+  left: 274px;
+  top: 482px;
+  transform-origin: 50% 50%;
+}
+
+#plant-stalk {
+  background-image: url('data/greenmanifesto/plant-stalk.png');  
+  width:29px;
+  height:315px;
+  top: 186px;
+  left: 333px;
+  transform-origin: 50% 100%;
+}
+#plant-ground, #plant-stalk {
+  animation-delay:3s;
+  animation-duration:4s;
+  animation-timing-function: ease-out;
+}
+
+#plant .leaf {
+  animation-name: growLeaf;
+  animation-delay: 3s;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.css3on #plant .leaf {
+  transform:scale(0);
+}
+
+#plant #plant-leaf-1 { animation-delay: 3.5s; animation-duration: 1s;   transform-origin: 1px 73px;}
+#plant #plant-leaf-2 { animation-delay: 4s;   animation-duration: 1s;   transform-origin: 134px 70px;}
+#plant #plant-leaf-3 { animation-delay: 4.5s; animation-duration: 1.5s; transform-origin: 3px 79px;}
+#plant #plant-leaf-4 { animation-delay: 5s;   animation-duration: 2s;   transform-origin: 176px 101px;}
+#plant #plant-leaf-5 { animation-delay: 5.7s; animation-duration: 2.5s; transform-origin: 7px 123px;}
+#plant #plant-leaf-6 { animation-delay: 6.3s;   animation-duration: 3s;   transform-origin: 157px 206px;}
+
+.result0 #plant-ground, .result0 #plant-stalk { animation-name: growStalk0; animation-duration:2s; }
+.result10 #plant-ground, .result10 #plant-stalk { animation-name: growStalk10; animation-duration:2s; }
+.result20 #plant-ground, .result20 #plant-stalk { animation-name: growStalk20; animation-duration:2.5s; }
+.result30 #plant-ground, .result30 #plant-stalk { animation-name: growStalk30; animation-duration:2.5s; }
+.result40 #plant-ground, .result40 #plant-stalk { animation-name: growStalk40; animation-duration:3s; }
+.result50 #plant-ground, .result50 #plant-stalk { animation-name: growStalk50; animation-duration:3s; }
+.result60 #plant-ground, .result60 #plant-stalk { animation-name: growStalk60; animation-duration:3.5s; }
+.result70 #plant-ground, .result70 #plant-stalk { animation-name: growStalk70; animation-duration:3.5s; }
+.result80 #plant-ground, .result80 #plant-stalk { animation-name: growStalk80; animation-duration:3.5s; }
+.result90 #plant-ground, .result90 #plant-stalk { animation-name: growStalk90; animation-duration:4s; }
+.result100 #plant-ground, .result100 #plant-stalk { animation-name: growStalk100; animation-duration:4s; }
+
+@keyframes growStalk0   { 0% { transform: scale(0); } 100% { transform: scale(0.2); } }
+@keyframes growStalk10   { 0% { transform: scale(0); } 100% { transform: scale(0.3); } }
+@keyframes growStalk20   { 0% { transform: scale(0); } 100% { transform: scale(0.35); } }
+@keyframes growStalk30   { 0% { transform: scale(0); } 100% { transform: scale(0.45); } }
+@keyframes growStalk40   { 0% { transform: scale(0); } 100% { transform: scale(0.55); } }
+@keyframes growStalk50   { 0% { transform: scale(0); } 100% { transform: scale(0.65); } }
+@keyframes growStalk60   { 0% { transform: scale(0); } 100% { transform: scale(0.72); } }
+@keyframes growStalk70   { 0% { transform: scale(0); } 100% { transform: scale(0.9); } }
+@keyframes growStalk80   { 0% { transform: scale(0); } 100% { transform: scale(0.95); } }
+@keyframes growStalk90   { 0% { transform: scale(0); } 100% { transform: scale(0.98); } }
+@keyframes growStalk100 { 0% { transform: scale(0); } 100% { transform: scale(1); } }
+
+@keyframes growLeaf {
+  0% { transform: scale(0) rotateZ(-15deg); }
+  20% { transform: scale(0.2) rotateZ(20deg); }
+  40% { transform: scale(0.4) rotateZ(-10deg); }
+  60% { transform: scale(0.6) rotateZ(15deg); }
+  80% { transform: scale(0.8) rotateZ(-8deg); }
+  100% { transform: scale(1) rotateZ(0deg); }
+}
+
+#plant-leaf-1 {
+  background-image: url('data/greenmanifesto/plant-leaf-1.png');  
+  width:116px;
+  height:80px;
+  top: 360px;
+  left: 351px;
+}
+#plant-leaf-2 {
+  background-image: url('data/greenmanifesto/plant-leaf-2.png');  
+  width:134px;
+  height:88px;
+  top: 314px;
+  left: 208px;
+}
+#plant-leaf-3 {
+  background-image: url('data/greenmanifesto/plant-leaf-3.png');  
+  width:153px;
+  height:100px;
+  top: 246px;
+  left: 348px;
+}
+#plant-leaf-4 {
+  background-image: url('data/greenmanifesto/plant-leaf-4.png');  
+  width:176px;
+  height:125px;
+  top: 184px;
+  left: 167px;
+}
+#plant-leaf-5 {
+  background-image: url('data/greenmanifesto/plant-leaf-5.png');  
+  width:197px;
+  height:155px;
+  top: 81px;
+  left: 337px;
+}
+#plant-leaf-6 {
+  background-image: url('data/greenmanifesto/plant-leaf-6.png');  
+  width:187px;
+  height:219px;
+  top: -20px;
+  left: 191px;
+}
+
+.result0 #plant-leaf-6, .result0 #plant-leaf-5, .result0 #plant-leaf-4, .result0 #plant-leaf-3, .result0 #plant-leaf-2, .result0 #plant-leaf-1,
+.result10 #plant-leaf-6, .result10 #plant-leaf-5, .result10 #plant-leaf-4, .result10 #plant-leaf-3, .result10 #plant-leaf-2,
+.result20 #plant-leaf-6, .result20 #plant-leaf-5, .result20 #plant-leaf-4, .result20 #plant-leaf-3, .result20 #plant-leaf-2,
+.result30 #plant-leaf-6, .result30 #plant-leaf-5, .result30 #plant-leaf-4, .result30 #plant-leaf-3,
+.result40 #plant-leaf-6, .result40 #plant-leaf-5, .result40 #plant-leaf-4,
+.result50 #plant-leaf-6, .result50 #plant-leaf-5, .result50 #plant-leaf-4,
+.result60 #plant-leaf-6, .result60 #plant-leaf-5,
+.result70 #plant-leaf-6, .result70 #plant-leaf-5,
+.result80 #plant-leaf-6,
+.result90 #plant-leaf-6 {
+  display:none;
+}

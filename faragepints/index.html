@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script type="text/javascript">
+var utag_data = { stop_first_page_load : 'true' };
+</script>
+<script type="text/javascript">
+    (function(a,b,c,d){
+    a='//tags.tiqcdn.com/utag/newsinternational/thesun.nation/prod/utag.js';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+</script>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="../common/fonts/avenir/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta property="fb:app_id" content="422512764575494" /> 
+    <meta property="og:type"   content="sn-nfdrinking:pints"/> 
+
+    <meta property="og:url"         content="http://www.rekdev.com/thesun/faragepints/" /> 
+    <meta property="og:title"       content="#SunNation Nigel Farage drinking game" />
+    <meta property="og:image"       content="http://www.rekdev.com/thesun/faragepints/farage-intro.png" /> 
+    <meta property="og:description" content="Nigel Farage drinking game description" /> 
+  </head>
+  <body ng-app="sunnation" ng-controller="BaseController" ng-class="{touch: Modernizr.touch}">
+    <div id="game-container">
+      <div id="view-overlay">
+        <div ng-include="uiTemplate"></div>
+        <div ng-if="preloaded" ng-include="'views/toolbar.html'"></div>
+        <div id="orientation-overlay"></div>
+      </div>
+    </div>
+    <script src="../common/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../common/phaser.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../common/three.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../common/three/renderers/Projector.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../common/three/renderers/CanvasRenderer.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../common/tween.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../common/browser-polyfill.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../common/modernizr.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../common/angular.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../common/angular-ui-router.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../common/angular-preload.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../common/ngFacebook.js" type="text/javascript" charset="utf-8"></script>
+    <script src="app.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

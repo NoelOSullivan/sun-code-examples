@@ -1,0 +1,20 @@
+<div id="scores-screen" ng-controller="ScoresController">
+  <div id="home-billboard">
+    <div id="scores-list" ng-if="!fbConnected">
+      <p>How many pints did you drink with Nigel. Did you put up a good show.</p>
+      <p>Then share your score on Facebook and challenge your comrades!</p>
+      <div href="#" class="button-fbconnect" ng-click="fbconnect()">Connect with Facebook</div>
+    </div>
+    <div id="scores-list" ng-if="fbConnected">
+      <p ng-repeat="s in scores" class="score-row">
+        <span class="score-pos">{{ s.position }}.</span>
+        <span class="user-name">{{ s.name }}</span>
+        <span class="score-time">{{ s.score }}</span>
+      </p>
+    </div>
+    <div ng-include="'views/sharing.html'"></div>
+  </div>
+  <div id="play-again" class="playAgain scores hangingLink" ng-click="startgame()">
+  </div>
+  <div class="drink-responsibly"></div>
+</div>

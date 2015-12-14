@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script type="text/javascript">
+var utag_data = { stop_first_page_load : 'true' };
+</script>
+<script type="text/javascript">
+    (function(a,b,c,d){
+    a='//tags.tiqcdn.com/utag/newsinternational/thesun.nation/dev/utag.js';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+</script>
+    <link rel="stylesheet" type="text/css" href="../common/reset.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="screen-choice-party.css">
+    <link rel="stylesheet" type="text/css" href="screen-manage-canvas.css">
+    <link rel="stylesheet" type="text/css" href="screen-manage-share.css">
+    <link rel="stylesheet" type="text/css" href="../common/fonts/avenir/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta property="og:type"        content="article" /> 
+    <meta property="og:url"         content="http://www.sunnation.co.uk/games/release/memegenerator/" /> 
+    <meta property="og:title"       content="#SunNation Meme Generator Relations" />
+    <meta property="og:image"       content="http://www.sunnation.co.uk/games/release/memegenerator/images/cover-fb.jpg" /> 
+    <meta property="og:description" content="#SubNation Meme Generator Relations" /> 
+  </head>
+  <body ng-app="sunnation" ng-controller="MainController" ng-class="{touch: Modernizr.touch}">
+    <div id="game-container">
+      <div id="view-overlay">
+ 
+        <!--                                 START SCREEN                                 -->
+        <!--                                 START SCREEN                                 -->
+        
+        <div id="screen-start" ng-controller="ScreenStartController">
+            <div id="photo-booth"></div>
+            <div id="start-button-hover" class="start-button-hover"> </div>
+            <div id="start-button" class="start-button" ng-mouseenter="hoverStartButton()" ng-mouseleave="leaveStartButton()" ng-click="clickStartButton()"></div>
+        </div>
+
+        <!--                                CHOICE OF PARTY                               -->
+        <!--                                CHOICE OF PARTY                               -->
+
+        <div id="screen-choice" ng-controller="ScreenChoiceController">
+        <!-- HIDDEN INPUT BOX-->
+        <!--input type="file" id="fileInput" ng-model="url.text" ng-change="manageInputSCC(this.files)" style="visibility:hidden;position:absolute;top:-50;left:-50"/-->
+            <!--UKIP SLEEVE-->  
+            <div id="ukip-main-sleeve" class="sleeve ukip-sleeve">
+                <div class="inside-sleeve ukip-inside-sleeve"></div>
+                <div class="thumb ukip-thumb"></div>
+                <div class="thumb-line thumb-line1 v-line-ukip"></div>
+                <div class="thumb-line thumb-line2 v-line-ukip"></div>
+                <div class="s-photo s-photo-top">
+                    <div class="s-photo-bg-top"></div>
+                    <div id="photoUkip1" class="s-photo-image s-photo-image-top" ng-click="clickPhotoOp(1)"></div>
+                    <div class="s-photo-tri s-photo-tri-top"></div>
+                    <div class="s-photo-num s-photo-num-top s-photo-num-ukip">1</div>
+                </div>
+                <div class="s-photo s-photo-bottom">
+                    <div class="s-photo-bg-bottom"></div>
+                    <div id="photoUkip2" class="s-photo-image s-photo-image-bottom" ng-click="clickPhotoOp(2)"></div>
+                    <div class="s-photo-tri s-photo-tri-bottom"></div>
+                    <div class="s-photo-num s-photo-num-bottom s-photo-num-ukip">2</div>
+                </div>
+                <div class="vertical-line v-line-ukip"></div>
+                <div class="sleeve-text ukip-text">UKIP</div>
+                <div class="sleeve-click" ng-click="openSleeve(1)"></div>
+            </div>
+            <!--TORY SLEEVE-->  
+            <div id="tory-main-sleeve" class="sleeve tory-sleeve">
+                <div class="inside-sleeve tory-inside-sleeve"></div>
+                <div class="thumb tory-thumb"></div>
+                <div class="thumb-line thumb-line1 v-line-tory"></div>
+                <div class="thumb-line thumb-line2 v-line-tory"></div>
+                <div class="s-photo s-photo-top">
+                    <div class="s-photo-bg-top"></div>
+                    <div id="photoTory1" class="s-photo-image s-photo-image-top" ng-click="clickPhotoOp(1)"></div>
+                    <div class="s-photo-tri s-photo-tri-top"></div>
+                    <div class="s-photo-num s-photo-num-top s-photo-num-tory">1</div>
+                </div>
+                <div class="s-photo s-photo-bottom">
+                    <div class="s-photo-bg-bottom"></div>
+                    <div id="photoTory2" class="s-photo-image s-photo-image-bottom" ng-click="clickPhotoOp(2)"></div>
+                    <div class="s-photo-tri s-photo-tri-bottom"></div>
+                    <div class="s-photo-num s-photo-num-bottom s-photo-num-tory">2</div>
+                </div>
+                <div class="vertical-line v-line-tory"></div>
+                <div class="sleeve-text tory-text">TORY</div>
+                <div class="sleeve-click" ng-click="openSleeve(2)"></div>
+            </div>
+            <!--GREEN SLEEVE-->  
+            <div id="green-main-sleeve" class="sleeve green-sleeve">
+                <div class="inside-sleeve green-inside-sleeve"></div>
+                <div class="thumb green-thumb"></div>
+                <div class="thumb-line thumb-line1 v-line-green"></div>
+                <div class="thumb-line thumb-line2 v-line-green"></div>
+                <div class="s-photo s-photo-top">
+                    <div class="s-photo-bg-top"></div>
+                    <div id="photoGreen1" class="s-photo-image s-photo-image-top" ng-click="clickPhotoOp(1)"></div>
+                    <div class="s-photo-tri s-photo-tri-top"></div>
+                    <div class="s-photo-num s-photo-num-top s-photo-num-green">1</div>
+                </div>
+                <div class="s-photo s-photo-bottom">
+                    <div class="s-photo-bg-bottom"></div>
+                    <div id="photoGreen2" class="s-photo-image s-photo-image-bottom" ng-click="clickPhotoOp(2)"></div>
+                    <div class="s-photo-tri s-photo-tri-bottom"></div>
+                    <div class="s-photo-num s-photo-num-bottom s-photo-num-green">2</div>
+                </div>
+                <div class="vertical-line v-line-green"></div>
+                <div class="sleeve-text green-text">GREEN</div>
+                <div class="sleeve-click" ng-click="openSleeve(3)"></div>
+            </div>
+            <!--LIBDEM SLEEVE-->  
+            <div id="libdem-main-sleeve" class="sleeve libdem-sleeve">
+                <div class="inside-sleeve libdem-inside-sleeve"></div>
+                <div class="thumb libdem-thumb"></div>
+                <div class="thumb-line thumb-line1 v-line-libdem"></div>
+                <div class="thumb-line thumb-line2 v-line-libdem"></div>
+                <div class="s-photo s-photo-top">
+                    <div class="s-photo-bg-top"></div>
+                    <div id="photoLibdem1" class="s-photo-image s-photo-image-top" ng-click="clickPhotoOp(1)"></div>
+                    <div class="s-photo-tri s-photo-tri-top"></div>
+                    <div class="s-photo-num s-photo-num-top s-photo-num-libdem">1</div>
+                </div>
+                <div class="s-photo s-photo-bottom">
+                    <div class="s-photo-bg-bottom"></div>
+                    <div id="photoLibdem2" class="s-photo-image s-photo-image-bottom" ng-click="clickPhotoOp(2)"></div>
+                    <div class="s-photo-tri s-photo-tri-bottom"></div>
+                    <div class="s-photo-num s-photo-num-bottom s-photo-num-libdem">2</div>
+                </div>
+                <div class="vertical-line v-line-libdem"></div>
+                <div class="sleeve-text libdem-text">LIB DEM</div>
+                <div class="sleeve-click" ng-click="openSleeve(4)"></div>
+            </div>
+            <!--LABOUR SLEEVE-->  
+            <div id="labour-main-sleeve" class="sleeve labour-sleeve">
+                <div class="inside-sleeve labour-inside-sleeve"></div>
+                <div class="thumb labour-thumb"></div>
+                <div class="thumb-line thumb-line1 v-line-labour"></div>
+                <div class="thumb-line thumb-line2 v-line-labour"></div>
+                <div class="s-photo s-photo-top">
+                    <div class="s-photo-bg-top"></div>
+                    <div id="photoLabour1" class="s-photo-image s-photo-image-top" ng-click="clickPhotoOp(1)"></div>
+                    <div class="s-photo-tri s-photo-tri-top"></div>
+                    <div class="s-photo-num s-photo-num-top s-photo-num-labour">1</div>
+                </div>
+                <div class="s-photo s-photo-bottom">
+                    <div class="s-photo-bg-bottom"></div>
+                    <div id="photoLabour2"  class="s-photo-image s-photo-image-bottom" ng-click="clickPhotoOp(2)"></div>
+                    <div class="s-photo-tri s-photo-tri-bottom"></div>
+                    <div class="s-photo-num s-photo-num-bottom s-photo-num-labour">2</div>
+                </div>
+                <div class="vertical-line v-line-labour"></div>
+                <div class="sleeve-text labour-text">LABOUR</div>
+                <div class="sleeve-click" ng-click="openSleeve(5)"></div>
+            </div>
+            <div id="party-text" class="pick-party"></div>
+            <div id="pick-op-text" class="pick-op"> </div>
+            <div id="get-photo-choice">
+                <div class="small-camera">
+                    <div class="small-flash"></div>
+                </div>
+                <div class="choose-your-photo"></div>
+                <div id="take-text"></div>
+                <div id="existing-text"></div>
+                <div id="camerabutton" class="image-button camera-button" ng-click="clickCameraButton()">
+                    <div class="text-buttons text-camera">CAMERA</div>
+                </div>
+                <label id="disk" class="myLabelDisk">
+                    <input type="file" id="imageLoader"/>
+                    <div class="text-buttons text-disk">UPLOAD</div>
+                </label>
+                <label id="touchphoto" class="myLabelPhoto">
+                    <input type="file" id="imageLoaderTouch"/>
+                    <div class="text-buttons text-touchphoto">PHOTO</div>
+                </label>
+            </div>
+        </div>
+
+        <!--                                CANVAS SCREEN                               -->
+        <!--                                CANVAS SCREEN                               -->
+
+        <div id="screen-canvas" ng-controller="ScreenCanvasController">
+            <!--UKIP SLEEVE EYE-->  
+            <div id="sleeve-eye-ukip" class="sleeve-eye">
+                <div class="inside-sleeve ukip-inside-sleeve"></div>
+                <div class="thumb ukip-thumb"></div>
+                <div class="thumb-line thumb-line1 v-line-ukip"></div>
+                <div class="thumb-line thumb-line2 v-line-ukip"></div>
+                <div class="vertical-line v-line-ukip"></div>
+                <div class="sleeve-text ukip-text">UKIP</div>
+            </div>
+            <!--TORY SLEEVE EYE-->  
+            <div id="sleeve-eye-tory" class="sleeve-eye">
+                <div class="inside-sleeve tory-inside-sleeve"></div>
+                <div class="thumb tory-thumb"></div>
+                <div class="thumb-line thumb-line1 v-line-tory"></div>
+                <div class="thumb-line thumb-line2 v-line-tory"></div>
+                <div class="vertical-line v-line-tory"></div>
+                <div class="sleeve-text tory-text">TORY</div>
+            </div>
+            <!--SNP SLEEVE EYE-->  
+            <div id="sleeve-eye-green"class="sleeve-eye">
+                <div class="inside-sleeve green-inside-sleeve"></div>
+                <div class="thumb green-thumb"></div>
+                <div class="thumb-line thumb-line1 v-line-green"></div>
+                <div class="thumb-line thumb-line2 v-line-green"></div>
+                <div class="vertical-line v-line-green"></div>
+                <div class="sleeve-text green-text">GREEN</div>
+            </div>
+            <!--LIBDEM SLEEVE EYE-->  
+            <div id="sleeve-eye-libdem" class="sleeve-eye">
+                <div class="inside-sleeve libdem-inside-sleeve"></div>
+                <div class="thumb libdem-thumb"></div>
+                <div class="thumb-line thumb-line1 v-line-libdem"></div>
+                <div class="thumb-line thumb-line2 v-line-libdem"></div>
+                <div class="vertical-line v-line-libdem"></div>
+                <div class="sleeve-text libdem-text">LIB DEM</div>
+            </div>
+            <!--LABOUR SLEEVE EYE-->  
+            <div id="sleeve-eye-labour" class="sleeve-eye">
+                <div class="inside-sleeve labour-inside-sleeve"></div>
+                <div class="thumb labour-thumb"></div>
+                <div class="thumb-line thumb-line1 v-line-labour"></div>
+                <div class="thumb-line thumb-line2 v-line-labour"></div>
+                <div class="vertical-line v-line-labour"></div>
+                <div class="sleeve-text labour-text">LABOUR</div>
+            </div>
+            <!--EYE INTERFACE-->  
+            <div id="eye-interface">
+                <!--div class="drag-text"></div-->
+                <!--div id="anticlockwise" ng-mousedown="turnAnticlockwise()" ng-mouseUp="stopRotation()"></div-->
+                <!--div id="clockwise" ng-mousedown="turnClockwise()"  ng-mouseUp="stopRotation()"></div-->
+                <!--div class="rotation"></div-->
+                <!--div id="ready-button" ng-click="gotoAdjustSCC()">
+                    <div class="text-ready">READY?</div>
+                </div-->
+            </div>
+
+            <div id="take-photo" ng-click="freezeImageNG()">
+                <div class="text-photo">TAKE PHOTO</div>
+            </div>
+
+            <!--                                TWEAK INTERFACE                               -->
+            <!--                                TWEAK INTERFACE                               -->
+
+            <div id="adjust-interface">
+                <div class="adjust-text"></div>
+                <div class="position"></div>
+                <div id="arrow-up" ng-mousedown="clickArrowUpSCC($event)" ng-mouseUp="stopTranslate()" ng-mouseLeave="stopTranslate()"></div>
+                <div id="arrow-left" ng-mousedown="clickArrowLeftSCC()" ng-mouseUp="stopTranslate()" ng-mouseLeave="stopTranslate()"></div>
+                <div id="arrow-right" ng-mousedown="clickArrowRightSCC()" ng-mouseUp="stopTranslate()" ng-mouseLeave="stopTranslate()"></div>
+                <div id="arrow-down" ng-mousedown="clickArrowDownSCC()" ng-mouseUp="stopTranslate()" ng-mouseLeave="stopTranslate()"></div>
+                <div class="zoom"></div>
+                <div id="button-plus" ng-mousedown="clickPlusSCC()" ng-mouseUp="stopScale()" ng-mouseLeave="stopScale()"></div>
+                <div id="button-minus" ng-mousedown="clickMinusSCC()" ng-mouseUp="stopScale()" ng-mouseLeave="stopScale()"></div>
+                <div id="anticlockwise" ng-mousedown="turnAnticlockwise()" ng-mouseUp="stopRotation()" ng-mouseLeave="stopRotation()"></div>
+                <div id="clockwise" ng-mousedown="turnClockwise()"  ng-mouseUp="stopRotation()" ng-mouseLeave="stopRotation()"></div>
+                <div class="rotation"></div>
+                <div id="tick" ng-click="clickTickSCC()"></div>
+                <div class="restart-button-canvas" ng-click="restartSCC()"></div>
+            </div>
+
+            <!--                                CANVAS DIVS                               -->
+            <!--                                CANVAS DIVS                               -->
+
+            <div id="canvas-wrapper">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div id="canvas-op-wrapper">
+                <canvas id="canvas-op"></canvas>
+            </div>
+            <div id="small-oval"></div>
+            <div id="large-oval"></div>
+            <div id="button-oval" ng-click="inverseOvalMeme()"></div>
+            <div id="button-meme" ng-click="inverseOvalMeme()"></div>
+            <canvas id="canvas-off-screen"></canvas>
+            <canvas id="canvas-transform"></canvas>
+            <!--div id="left-eye" ng-mousedown="initDragEye(1)" ng-mouseup="stopDragEye(1)"></div-->
+            <!--div id="right-eye" ng-mousedown="initDragEye(2)" ng-mouseup="stopDragEye(2)"></div-->
+            <!--div id="left-eye"></div-->
+            <!--div id="right-eye"></div-->
+            <!--div id="take-photo" ng-click="freezeImageNG()">
+                <div class="text-photo">TAKE PHOTO</div>
+            </div-->
+        </div>
+
+        <!--                                SHARE SCREEN                               -->
+        <!--                                SHARE SCREEN                               -->
+
+        <div id="screen-share" ng-controller="ScreenShareController">
+            <!--UKIP SLEEVE SHARE-->  
+            <div id="sleeve-share-ukip" class="sleeve-share">
+                <div class="inside-sleeve ukip-inside-sleeve"></div>
+                <div class="thumb ukip-thumb"></div>
+                <div class="thumb-line thumb-line1 v-line-ukip"></div>
+                <div class="thumb-line thumb-line2 v-line-ukip"></div>
+                <div class="vertical-line v-line-ukip"></div>
+                <div class="vertical-line2 v-line-ukip"></div>
+                <div class="sleeve-text ukip-text">UKIP</div>
+            </div>
+            <!--TORY SLEEVE SHARE-->  
+            <div id="sleeve-share-tory" class="sleeve-share">
+                <div class="inside-sleeve tory-inside-sleeve"></div>
+                <div class="thumb tory-thumb"></div>
+                <div class="thumb-line thumb-line1 v-line-tory"></div>
+                <div class="thumb-line thumb-line2 v-line-tory"></div>
+                <div class="vertical-line v-line-tory"></div>
+                <div class="vertical-line2 v-line-tory"></div>
+                <div class="sleeve-text tory-text">TORY</div>
+            </div>
+            <!--SNP SLEEVE SHARE-->  
+            <div id="sleeve-share-green"class="sleeve-share">
+                <div class="inside-sleeve green-inside-sleeve"></div>
+                <div class="thumb green-thumb"></div>
+                <div class="thumb-line thumb-line1 v-line-green"></div>
+                <div class="thumb-line thumb-line2 v-line-green"></div>
+                <div class="vertical-line v-line-green"></div>
+                <div class="vertical-line2 v-line-green"></div>
+                <div class="sleeve-text green-text">GREEN</div>
+            </div>
+            <!--LIBDEM SLEEVE SHARE-->  
+            <div id="sleeve-share-libdem" class="sleeve-share">
+                <div class="inside-sleeve libdem-inside-sleeve"></div>
+                <div class="thumb libdem-thumb"></div>
+                <div class="thumb-line thumb-line1 v-line-libdem"></div>
+                <div class="thumb-line thumb-line2 v-line-libdem"></div>
+                <div class="vertical-line v-line-libdem"></div>
+                <div class="sleeve-text libdem-text">LIB DEM</div>
+            </div>
+            <!--LABOUR SLEEVE SHARE-->  
+            <div id="sleeve-share-labour" class="sleeve-share">
+                <div class="inside-sleeve labour-inside-sleeve"></div>
+                <div class="thumb labour-thumb"></div>
+                <div class="thumb-line thumb-line1 v-line-labour"></div>
+                <div class="thumb-line thumb-line2 v-line-labour"></div>
+                <div class="vertical-line v-line-labour"></div>
+                <div class="vertical-line2 v-line-labour"></div>
+                <div class="sleeve-text labour-text">LABOUR</div>
+            </div>
+
+            <!--SHARE INTERFACE LEFT--> 
+            <div class="share-interface-left">
+                <div id="share-text"></div>
+                <div id="share-again"></div>
+                <div id="facebook-button" ng-click="shareToFB()"></div>
+                <div id="twitter-button" ng-click="shareToTwitter()"></div>
+                <!--div class="download-button"></div-->
+                <!--a href="#" id="save-button" class="download-button" ng-click="saveImage()" download="mymeme.png"></a-->
+                <div id="download-button" ng-click="saveImage()"></div>
+                <div class="restart-text"></div>
+                <div class="restart-button" ng-click="restartSSC()"></div>
+            </div>
+
+            <!--SHARE INTERFACE RIGHT-->
+            <div class="share-interface-right">
+                <div class="wall-text"></div>
+                <textarea id="text-box" autocomplete="off" placeholder="Write your text here..." ng-keyup="countChars()"></textarea>
+                <textarea id="char-count"></textarea>
+                <div id="see-facebook"></div>
+                <div id="see-twitter"></div>
+                <div id="go-to-facebook" ng-click="goToFacebook()"></div>
+                <!--div id="go-to-twitter" ng-click="goToTwitter()"></div-->
+                <a href="#" id="go-to-twitter" target="_blank"></a>
+            </div>
+
+            <!--SHARE CANVAS VISUAL ONLY-->
+            <div id="share-canvas-wrapper">
+                <canvas id="share-canvas"></canvas>
+            </div>
+
+        </div>
+        <!--button id="takephoto" ng-click="freezeImageNG()">Take photo</button>
+        <video id='webcam' width="300px" height="300px" autoplay></video>
+        <input type="file" id="take-picture" accept="image/*"-->
+
+        <!--div id="eye-div" ng-controller="EyeDivController">
+            <div class="drag-text"></div>
+            <div id="ready-button" ng-click="gotoAdjustSCC()">
+                <div class="text-ready">READY?</div>
+            </div>
+            <div id="left-eye"></div>
+            <div id="right-eye"></div>
+        </div-->
+
+        <!--                                VIDEO STREAM                               -->
+        <!--                                VIDEO STREAM                               -->
+
+        <video id='webcam' autoplay></video>
+        <div id="orientation-overlay"></div>
+
+      </div>
+    </div>
+    <script src="../common/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../common/browser-polyfill.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../common/modernizr.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../common/angular.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../common/angular-ui-router.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../common/angular-preload.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../common/ngFacebook.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../common/oauth.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../common/preloadjs-0.6.0.combined.js" type="text/javascript" charset="utf-8"></script>
+    <!--script src="libs/easeljs-0.8.0.min.js" type="text/javascript" charset="utf-8"></script-->
+    <!--script src="libs/preloadjs-0.6.0.combined.js" type="text/javascript" charset="utf-8"></script-->
+    <script src="imagesharing.js" type="text/javascript" charset="utf-8"></script>
+    <script src="base64binary.js" type="text/javascript" charset="utf-8"></script>
+    <script src="app.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

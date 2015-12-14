@@ -1,0 +1,138 @@
+:root {
+  --ui-color: #951ad1;
+  --glow-color: #c415f5;
+  --rosette-url: 'data/queen/rosette-queen.png';
+  --quiz-logo-url: 'data/queen/logo-queen.png';
+  --leader-url: 'data/queen/queen-torso.png';
+  --button-bg-url: 'data/queen/button.png';
+  --button-bg-hover-url: 'data/queen/button-hover.png';
+  --result-panel-url: 'data/queen/result-panel.png';
+  --headline-panel-url: 'data/queen/headline-panel.png';
+}
+
+.results #result-text p,
+.questionHolder #headline p,
+.questionHolder .answers .answer {
+  color:#000;
+}
+.results #result-text p,
+.questionHolder #headline p,
+.questionHolder .answers .answer .caption {
+    text-shadow: 1px -1px rgba(255,255,255,0.5);
+}
+
+.questionHolder .imageHolder {
+  background-image: url('data/queen/frame-back.png');
+  padding: 12px 16px; /* Substituted borders for padding */
+    border:none 0px transparent;
+}
+
+#start #leader-torso {
+  height:520px;
+  top:680px;
+  height:543px;
+}
+
+#scene {
+  position: absolute;
+  overflow: hidden;
+  top:-192px;
+  left:-151px;
+  width:960px;
+  height:900px;
+}
+
+#queen-end-1 {
+   position:absolute;
+   background-image:url('data/queen/queen-end-1.png');
+   top:200px;
+   left:365px;
+   width:281px;
+   height:514px;
+}
+
+#queen-end-2 {
+   position:absolute;
+   background-image:url('data/queen/queen-end-2.png');
+   top:190px;
+   left:302px;
+   width:400px;
+   height:527px;
+}
+
+#queen-end-3 {
+   position:absolute;
+   background-image:url('data/queen/queen-end-3.png');
+   top:160px;
+   left:240px;
+   width:540px;
+   height:553px;
+}
+
+#queen-end-4 {
+   position:absolute;
+   background-image:url('data/queen/queen-end-4.png');
+   top:120px;
+   left:295px;
+   width:415px;
+   height:619px;
+}
+
+.result0 #queen-end-2,
+.result0 #queen-end-3,
+.result0 #queen-end-4 {
+  display:none;
+}
+.result10 #queen-end-2,
+.result10 #queen-end-3,
+.result10 #queen-end-4 {
+  display:none;
+}
+.result20 #queen-end-2,
+.result20 #queen-end-3,
+.result20 #queen-end-4 {
+  display:none;
+}
+
+.result30 #queen-end-1,
+.result30 #queen-end-3,
+.result30 #queen-end-4 {
+  display:none;
+}
+.result40 #queen-end-1,
+.result40 #queen-end-3,
+.result40 #queen-end-4 {
+  display:none;
+}
+.result50 #queen-end-1,
+.result50 #queen-end-3,
+.result50 #queen-end-4 {
+  display:none;
+}
+
+.result60 #queen-end-1,
+.result60 #queen-end-2,
+.result60 #queen-end-4 {
+  display:none;
+}
+.result70 #queen-end-1,
+.result70 #queen-end-2,
+.result70 #queen-end-4 {
+  display:none;
+}
+.result80 #queen-end-1,
+.result80 #queen-end-2,
+.result80 #queen-end-4 {
+  display:none;
+}
+
+.result90 #queen-end-1,
+.result90 #queen-end-2,
+.result90 #queen-end-3 {
+  display:none;
+}
+.result100 #queen-end-1,
+.result100 #queen-end-2,
+.result100 #queen-end-3 {
+  display:none;
+}

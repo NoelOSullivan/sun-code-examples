@@ -1,0 +1,133 @@
+:root {
+  --ui-color: #3f8428;
+  --glow-color: #3f8428;
+  --rosette-url: 'data/plaid/rosette.png';
+  --quiz-logo-url: 'data/plaid/logo.png';
+  --leader-url: 'data/plaid/leader-torso.png';
+  --button-bg-url: 'data/plaid/button.png';
+  --button-bg-hover-url: 'data/plaid/button-hover.png';
+  --result-panel-url: 'data/plaid/result-panel.png';
+  --headline-panel-url: 'data/plaid/headline-panel.png';
+}
+
+#flower > *,#flower-head,#flower-head > * {
+  position:absolute;
+  background-repeat:no-repeat;
+  animation-fill-mode: forwards;
+}
+
+#flower-stalk {
+  background-image: url('data/plaid/flower-stalk.png');
+  width:112px;
+  height:423px;
+  top: 99px;
+  left: 315px;
+  transform-origin: 22px 423px;
+  animation-delay:3.5s;
+  animation-duration: 3s;
+}
+
+#flower-leaves {
+  background-image: url('data/plaid/flower-leaves.png');
+  width:237px;
+  height:389px;
+  top: 133px;
+  left: 230px;
+  transform-origin: 106px 389px;
+  animation-delay:3s;
+  animation-duration: 3.5s;
+}
+
+#flower-head {
+  position:absolute;
+  top:6px;
+  left:66px;
+  animation-delay:5s;
+  animation-duration: 0.8s;
+  animation-name: headRot;
+}
+
+#flower-petals {
+  background-image: url('data/plaid/flower-petals.png');
+  width:268px;
+  height:264px;
+  top: -150px;
+  left: -88px;
+  animation-delay:5.3s;
+  transform-origin:100px 141px;
+  animation-duration: 1.5s;
+}
+
+#flower-flower {
+  background-image: url('data/plaid/flower-flower.png');
+  width:130px;
+  height:109px;
+  top:0px;
+  left:0px;
+  top: -75px;
+  left:  12px;
+  animation-delay:5s;
+  animation-duration: 2s;
+  transform-origin:0px 68px;
+}
+
+.css3on #flower-leaves, .css3on #flower-stalk {
+  transform:scale(0);
+}
+.css3on #flower-petals, .css3on #flower-flower {
+  transform:scale(0.33);
+}
+
+.css3on #flower-head {
+  transform: rotate(-20deg);
+}
+
+.result0 #flower-stalk, .result0 #flower-leaves { animation-name: grow0; }
+.result10 #flower-stalk, .result10 #flower-leaves { animation-name: grow1; }
+.result20 #flower-stalk, .result20 #flower-leaves { animation-name: grow2; }
+.result30 #flower-stalk, .result30 #flower-leaves { animation-name: grow3; }
+.result40 #flower-stalk, .result40 #flower-leaves { animation-name: grow4; }
+.result50 #flower-stalk, .result50 #flower-leaves { animation-name: grow5; }
+.result60 #flower-stalk, .result60 #flower-leaves { animation-name: grow6; }
+.result70 #flower-stalk, .result70 #flower-leaves { animation-name: grow7; }
+.result80 #flower-stalk, .result80 #flower-leaves { animation-name: grow8; }
+.result90 #flower-stalk, .result90 #flower-leaves { animation-name: grow9; }
+.result100 #flower-stalk, .result100 #flower-leaves { animation-name: grow10; }
+
+.result0 #flower-petals, .result0 #flower-flower { animation-name: growflower0; }
+.result10 #flower-petals, .result10 #flower-flower { animation-name: growflower1; }
+.result20 #flower-petals, .result20 #flower-flower { animation-name: growflower2; }
+.result30 #flower-petals, .result30 #flower-flower { animation-name: growflower3; }
+.result40 #flower-petals, .result40 #flower-flower { animation-name: growflower4; }
+.result50 #flower-petals, .result50 #flower-flower { animation-name: growflower5; }
+.result60 #flower-petals, .result60 #flower-flower { animation-name: growflower6; }
+.result70 #flower-petals, .result70 #flower-flower { animation-name: growflower7; }
+.result80 #flower-petals, .result80 #flower-flower { animation-name: growflower8; }
+.result90 #flower-petals, .result90 #flower-flower { animation-name: growflower9; }
+.result100 #flower-petals, .result100 #flower-flower { animation-name: growflower10; }
+
+@keyframes grow0 { 0% { transform: scale(0); } 100% { transform: scale(0.2);} }
+@keyframes grow1 { 0% { transform: scale(0); } 100% { transform: scale(0.25);} }
+@keyframes grow2 { 0% { transform: scale(0); } 100% { transform: scale(0.3);} }
+@keyframes grow3 { 0% { transform: scale(0); } 100% { transform: scale(0.35);} }
+@keyframes grow4 { 0% { transform: scale(0); } 100% { transform: scale(0.4);} }
+@keyframes grow5 { 0% { transform: scale(0); } 100% { transform: scale(0.5);} }
+@keyframes grow6 { 0% { transform: scale(0); } 100% { transform: scale(0.6);} }
+@keyframes grow7 { 0% { transform: scale(0); } 100% { transform: scale(0.7);} }
+@keyframes grow8 { 0% { transform: scale(0); } 100% { transform: scale(0.8);} }
+@keyframes grow9 { 0% { transform: scale(0); } 100% { transform: scale(0.9);} }
+@keyframes grow10 { 0% { transform: scale(0); } 100% { transform: scale(1);} }
+
+@keyframes growflower0 { 0% { transform: scale(0.33); } 100% { transform: scale(0.2);} }
+@keyframes growflower1 { 0% { transform: scale(0.33); } 100% { transform: scale(0.25);} }
+@keyframes growflower2 { 0% { transform: scale(0.33); } 100% { transform: scale(0.3);} }
+@keyframes growflower3 { 0% { transform: scale(0.33); } 100% { transform: scale(0.35);} }
+@keyframes growflower4 { 0% { transform: scale(0.33); } 100% { transform: scale(0.4);} }
+@keyframes growflower5 { 0% { transform: scale(0.33); } 100% { transform: scale(0.5);} }
+@keyframes growflower6 { 0% { transform: scale(0.33); } 100% { transform: scale(0.6);} }
+@keyframes growflower7 { 0% { transform: scale(0.33); } 100% { transform: scale(0.7);} }
+@keyframes growflower8 { 0% { transform: scale(0.33); } 100% { transform: scale(0.8);} }
+@keyframes growflower9 { 0% { transform: scale(0.33); } 100% { transform: scale(0.9);} }
+@keyframes growflower10 { 0% { transform: scale(0.33); } 100% { transform: scale(1);} }
+
+@keyframes headRot { 0% { transform: rotate(-20deg);} 100% {transform: rotate(0);}}

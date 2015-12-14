@@ -1,0 +1,171 @@
+:root {
+  --ui-color: #e10a13;
+  --glow-color: #fa020a;
+  --rosette-url: 'data/labourmanifesto/rosette-labour.png';
+  --quiz-logo-url: 'data/labourmanifesto/logo-labour.png';
+  --leader-url: 'data/labourmanifesto/milliband-labour.png';
+  --button-bg-url: 'data/labourmanifesto/button.png';
+  --button-bg-hover-url: 'data/labourmanifesto/button-hover.png';
+  --result-panel-url: 'data/labourmanifesto/result-panel.png';
+  --headline-panel-url: 'data/labourmanifesto/headline-panel.png';
+}
+
+.end-game #results-container {
+  animation-duration: 0.1s;
+  animation-delay: 3s;
+}
+
+#butty > * {
+  width:700px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position:absolute;
+}
+
+.css3on #butty > * {
+  transform: translateY(-700px); /* translate off top of screen */
+  animation-name: dropInBaconPlain;
+  animation-fill-mode: forwards;
+  animation-duration:0.6s;
+  animation-delay:2.8s;
+  animation-timing-function: ease-in;
+}
+
+.filteron #butty > * {
+  animation-name: dropInBacon;
+}
+
+@keyframes dropInBaconPlain {
+  0% { transform: translateY(-700px); }
+  99% { transform: translateY(3px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes dropInBacon {
+  0% { transform: translateY(-700px); filter:url("#motionBlur") }
+  99% { transform: translateY(3px); filter:url("#motionBlur") }
+  100% { transform: translateY(0px); }
+}
+
+#butty > .bacon {
+  height:161px;
+}
+
+#butty #butty-bread-bottom {
+  height:152px;
+  background-image:url('data/labourmanifesto/butty-bread-bottom.png');
+  top:370px;
+}
+#butty #butty-bread-top {
+  top:100px;
+  height:140px;
+  left:-6px;
+  background-image:url('data/labourmanifesto/butty-bread-top.png');
+  animation-delay:6s;
+}
+#butty #butty-ketchup {
+  animation-delay:5.5s;
+  height:93px; top:167px;
+  background-image:url('data/labourmanifesto/butty-sauce.png');
+}
+
+.result0  #butty #butty-bread-top { animation-delay: 4.2s; top: 330px; }
+.result0  #butty #butty-ketchup   { animation-delay: 3.7s; top: 377px; } /* Normally 67px apart, looks wrong with no bacon */
+.result10  #butty #butty-bread-top { animation-delay: 4.4s; top: 300px; }
+.result10  #butty #butty-ketchup   { animation-delay: 3.9s; top: 367px; }
+.result20  #butty #butty-bread-top { animation-delay: 4.6s; top: 276px; }
+.result20  #butty #butty-ketchup   { animation-delay: 4.1s; top: 343px; }
+.result30  #butty #butty-bread-top { animation-delay: 4.8s; top: 252px; }
+.result30  #butty #butty-ketchup   { animation-delay: 4.3s; top: 319px; }
+.result40  #butty #butty-bread-top { animation-delay: 5s; top: 228px; }
+.result40  #butty #butty-ketchup   { animation-delay: 4.5s; top: 294px; }
+.result50  #butty #butty-bread-top { animation-delay: 5.2s; top: 204px; }
+.result50  #butty #butty-ketchup   { animation-delay: 4.7s; top: 270px; }
+.result60  #butty #butty-bread-top { animation-delay: 5.4s; top: 180px; }
+.result60  #butty #butty-ketchup   { animation-delay: 4.9s; top: 246px; }
+.result70  #butty #butty-bread-top { animation-delay: 5.6s; top: 156px; }
+.result70  #butty #butty-ketchup   { animation-delay: 5.1s; top: 222px; }
+.result80  #butty #butty-bread-top { animation-delay: 5.8s; top: 132px; }
+.result80  #butty #butty-ketchup   { animation-delay: 5.3s; top: 198px; }
+.result90  #butty #butty-bread-top { animation-delay: 6s; top: 108px; }
+.result90  #butty #butty-ketchup   { animation-delay: 5.5s; top: 174px; }
+
+#butty #butty-rasher-1 { animation-delay: 3.2s; top: 334px; background-image: url('data/labourmanifesto/butty-bacon-rasher.png'); }
+#butty #butty-rasher-2 { animation-delay: 3.4s; top: 322px; left:-4px; background-image: url('data/labourmanifesto/butty-bacon-2.png'); }
+#butty #butty-rasher-3 { animation-delay: 3.6s; top: 274px; left:4px; background-image: url('data/labourmanifesto/butty-bacon-3.png'); }
+#butty #butty-rasher-4 { animation-delay: 3.8s; top: 282px; left:15px; background-image: url('data/labourmanifesto/butty-bacon-4.png'); }
+#butty #butty-rasher-5 { animation-delay: 4.0s; top: 252px; background-image: url('data/labourmanifesto/butty-bacon-5.png'); }
+#butty #butty-rasher-6 { animation-delay: 4.2s; top: 233px; left:8px; background-image: url('data/labourmanifesto/butty-bacon-6.png'); }
+#butty #butty-rasher-7 { animation-delay: 4.4s; top: 186px; background-image: url('data/labourmanifesto/butty-bacon-7.png'); }
+#butty #butty-rasher-8 { animation-delay: 4.6s; top: 172px; background-image: url('data/labourmanifesto/butty-bacon-8.png'); }
+#butty #butty-rasher-9 { animation-delay: 4.8s; top: 126px; left:38px; background-image: url('data/labourmanifesto/butty-bacon-9.png'); }
+#butty #butty-rasher-10{ animation-delay: 5.0s; top: 118px; left: 5px; background-image: url('data/labourmanifesto/butty-bacon-10.png'); }
+
+.result0 .bacon {
+  display:none;
+}
+
+.result10 #butty-rasher-2,
+.result10 #butty-rasher-3,
+.result10 #butty-rasher-4,
+.result10 #butty-rasher-5,
+.result10 #butty-rasher-6,
+.result10 #butty-rasher-7,
+.result10 #butty-rasher-8,
+.result10 #butty-rasher-9,
+.result10 #butty-rasher-10 {
+  display:none;
+}
+
+.result20 #butty-rasher-3,
+.result20 #butty-rasher-4,
+.result20 #butty-rasher-5,
+.result20 #butty-rasher-6,
+.result20 #butty-rasher-7,
+.result20 #butty-rasher-8,
+.result20 #butty-rasher-9,
+.result20 #butty-rasher-10 {
+  display:none;
+}
+.result30 #butty-rasher-4,
+.result30 #butty-rasher-5,
+.result30 #butty-rasher-6,
+.result30 #butty-rasher-7,
+.result30 #butty-rasher-8,
+.result30 #butty-rasher-9,
+.result30 #butty-rasher-10 {
+  display:none;
+}
+.result40 #butty-rasher-5,
+.result40 #butty-rasher-6,
+.result40 #butty-rasher-7,
+.result40 #butty-rasher-8,
+.result40 #butty-rasher-9,
+.result40 #butty-rasher-10 {
+  display:none;
+}
+.result50 #butty-rasher-6,
+.result50 #butty-rasher-7,
+.result50 #butty-rasher-8,
+.result50 #butty-rasher-9,
+.result50 #butty-rasher-10 {
+  display:none;
+}
+.result60 #butty-rasher-7,
+.result60 #butty-rasher-8,
+.result60 #butty-rasher-9,
+.result60 #butty-rasher-10 {
+  display:none;
+}
+.result70 #butty-rasher-8,
+.result70 #butty-rasher-9,
+.result70 #butty-rasher-10 {
+  display:none;
+}
+.result80 #butty-rasher-9,
+.result80 #butty-rasher-10 {
+  display:none;
+}
+.result90 #butty-rasher-10 {
+  display:none;
+}

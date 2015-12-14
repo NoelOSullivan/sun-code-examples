@@ -1,0 +1,179 @@
+:root {
+  --ui-color: #951ad1;
+  --glow-color: #c415f5;
+  --rosette-url: 'data/charles/rosette-charles.png';
+  --quiz-logo-url: 'data/charles/logo-charles.png';
+  --leader-url: 'data/charles/charles-torso.png';
+  --button-bg-url: 'data/charles/button.png';
+  --button-bg-hover-url: 'data/charles/button-hover.png';
+  --result-panel-url: 'data/charles/result-panel.png';
+  --headline-panel-url: 'data/charles/headline-panel.png';
+}
+
+.results #result-text p,
+.questionHolder #headline p,
+.questionHolder .answers .answer .caption {
+    text-shadow: 1px -1px rgba(255,255,255,0.5);
+}
+
+.questionHolder .imageHolder {
+  background-image: url('data/charles/frame-back.png');
+  padding: 12px 16px; /* Substituted borders for padding */
+    border:none 0px transparent;
+}
+
+#start #leader-torso {
+  height:520px;
+  top:680px;
+  height:543px;
+}
+
+#scene {
+  position: absolute;
+  overflow: hidden;
+  top:-192px;
+  left:-151px;
+  width:960px;
+  height:900px;
+}
+
+#charles-end {
+   position:absolute;
+   background-image:url('data/charles/charles-end.png');
+   top:370px;
+   left:240px;
+   width:582px;
+   height:451px;
+}
+
+#party {
+   position:absolute;
+   background-image:url('data/charles/party.png');
+   left:350px;
+   top:-500px;
+   width:289px;
+   height:431px;
+}
+
+#cap {
+   position:absolute;
+   background-image:url('data/charles/cap.png');
+   left:365px;
+   top:-500px;
+   width:261px;
+   height:158px;
+}
+
+#bowler {
+   position:absolute;
+   background-image:url('data/charles/bowler.png');
+   left:350px;
+   top:-500px;
+   width:290px;
+   height:179px;
+}
+
+#crown {
+   position:absolute;
+   background-image:url('data/charles/crown.png');
+   left:360px;
+   top:-500px;
+   width:269px;
+   height:305px;
+}
+
+.result0 #cap,
+.result0 #bowler,
+.result0 #crown {
+  display:none;
+}
+.result10 #cap,
+.result10 #bowler,
+.result10 #crown {
+  display:none;
+}
+.result20 #cap,
+.result20 #bowler,
+.result20 #crown {
+  display:none;
+}
+.result30 #party,
+.result30 #bowler,
+.result30 #crown {
+  display:none;
+}
+.result40 #party,
+.result40 #bowler,
+.result40 #crown {
+  display:none;
+}
+.result50 #party,
+.result50 #bowler,
+.result50 #crown {
+  display:none;
+}
+.result60 #party,
+.result60 #cap,
+.result60 #crown {
+  display:none;
+}
+.result70 #party,
+.result70 #cap,
+.result70 #crown {
+  display:none;
+}
+.result80 #party,
+.result80 #cap,
+.result80 #crown {
+  display:none;
+}
+.result90 #party,
+.result90 #cap,
+.result90 #bowler {
+  display:none;
+}
+.result100 #party,
+.result100 #cap,
+.result100 #bowler {
+  display:none;
+}
+
+.css3on #party {
+  animation: partyDrop 1s ease-out 4s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes partyDrop {
+  0% { top: -500px; }
+  100% { top: 100px; }
+}
+
+.css3on #cap {
+  animation: capDrop 1s ease-out 4s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes capDrop {
+  0% { top: -500px; }
+  100% { top: 370px; }
+}
+
+.css3on #bowler {
+  animation: bowlerDrop 1s ease-out 4s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes bowlerDrop {
+  0% { top: -500px; }
+  100% { top: 340px; }
+}
+
+.css3on #crown {
+  animation: crownDrop 1s ease-out 4s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes crownDrop {
+  0% { top: -500px; }
+  100% { top: 220px; }
+}

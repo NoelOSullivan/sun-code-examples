@@ -1,0 +1,281 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Avenir Next LT Pro Heavy Condensed";
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#game-container {
+    background: linear-gradient(to bottom, #668bd1 0%,#77d9d9 100%);
+    width: 960px;
+    height: 1280px;
+    position: relative;
+    transform-origin: 0 0;
+    overflow:hidden;
+}
+
+#sunnation-logo {
+    position:absolute;
+    background-image: url('images/sun-nation-logo.png');
+    width:411px;
+    height:52px;
+    top:40px;
+    left:260px;
+}
+
+#preloader {
+    width:960px;
+    height:1280px;
+    text-align: center;
+}
+
+#progress-text {
+    position:absolute;
+    top:800px;
+    left:0;
+    width:960px;
+    font-size:100px;
+    color:#fff;
+    text-stroke: 3px black;
+     text-shadow:
+    -3px -3px 0 #000,  
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+#ui-choose{
+    position:absolute;
+    background-image: url('images/ui-choose.png');
+    left: 148px;
+    top: 944px;
+    width: 662px;
+    height: 216px;
+    visibility: hidden;
+}
+
+#ui-change{
+    position:absolute;
+    background-image: url('images/ui-change-box.png');
+    left: 160px;
+    top: 1160px;
+    width: 640px;
+    height: 80px;
+    visibility: hidden;
+}
+
+
+#ui-share-rect{
+    position:absolute;
+    background-image: url('images/ui-share-rect.png');
+    left: 160px;
+    top: 1040px;
+    width: 640px;
+    height: 120px;
+    visibility: hidden;
+}
+
+#ui-share-now{
+    position:absolute;
+    background-image: url('images/share-now-text.png');
+    left: 390px;
+    top: 1060px;
+    width: 185px;
+    height: 94px;
+    visibility: hidden;
+}
+
+#facebook-share{
+    position:absolute;
+    background-image: url('images/facebook-1.png');
+    left: 107px;
+    top: 960px;
+    width: 249px;
+    height: 253px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+#see-facebook{
+    position:absolute;
+    background-image: url('images/see-facebook.png');
+    left: 157px;
+    top: 970px;
+    width: 140px;
+    height: 77px;
+    visibility: hidden;
+}
+
+#twitter-share{
+    position:absolute;
+    background-image: url('images/twitter-1.png');
+    left: 593px;
+    top: 970px;
+    width: 246px;
+    height: 254px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+#see-twitter{
+    position:absolute;
+    background-image: url('images/see-twitter.png');
+    left: 650px;
+    top: 970px;
+    width: 140px;
+    height: 77px;
+    visibility: hidden;
+}
+
+.rosette-1{
+    position:absolute;
+    width:87px;
+    height:115px;
+    top:1163px;
+    visibility: hidden;
+}
+
+.rosette-2{
+    position:absolute;
+    width:97px;
+    height:121px;
+    top:1157px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+#rosette-miliband-1 {
+    background-image: url('images/rosette-labour-1.png');
+    left:167px;
+    visibility: hidden;
+}
+
+#rosette-miliband-2 {
+    background-image: url('images/rosette-labour-2.png');
+    left:161px;
+    visibility: hidden;
+}
+
+#rosette-cameron-1 {
+    background-image: url('images/rosette-tory-1.png');
+    left:251px;
+    visibility: hidden;
+}
+
+#rosette-cameron-2 {
+    background-image: url('images/rosette-tory-2.png');
+    left:245px;
+    visibility: hidden;
+}
+
+#rosette-clegg-1 {
+    background-image: url('images/rosette-libdem-1.png');
+    left:334px;
+    visibility: hidden;
+}
+
+#rosette-clegg-2 {
+    background-image: url('images/rosette-libdem-2.png');
+    left:328px;
+    visibility: hidden;
+}
+
+#rosette-farage-1 {
+    background-image: url('images/rosette-ukip-1.png');
+    left:550px;
+    visibility: hidden;
+}
+
+#rosette-farage-2 {
+    background-image: url('images/rosette-ukip-2.png');
+    left:544px;
+    visibility: hidden;
+}
+
+#rosette-bennett-1 {
+    background-image: url('images/rosette-green-1.png');
+    left:634px;
+    visibility: hidden;
+}
+
+#rosette-bennett-2 {
+    background-image: url('images/rosette-green-2.png');
+    left:628px;
+    visibility: hidden;
+}
+
+#rosette-sturgeon-1 {
+    background-image: url('images/rosette-snp-1.png');
+    left:717px;
+    visibility: hidden;
+}
+
+#rosette-sturgeon-2 {
+    background-image: url('images/rosette-snp-2.png');
+    left:711px;
+    visibility: hidden;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+#canvas-game{
+    background-color: #FFFFFF;
+    position:absolute;
+    left:0px;
+    top:0px;
+    width: 960px;
+    height: 1280px;
+    visibility: hidden;
+}
+
+#canvas-off-screen {
+    background-color: #FFFFFF;
+    position: absolute;
+    top:0px;
+    width: 480px;
+    height: 640px;
+    left: 2000px;
+}
+
+#ui-hide{
+    position: absolute;
+    background-color:rgba(0,0,0,0.3);
+    left:0px;
+    top:0px;
+    width:960px;
+    height:1280px;
+    visibility: hidden;
+}
+
+#text-box {
+    position: absolute;
+    background-color: #FFF;
+    left: 80px;
+    top: 500px;
+    width: 800px;
+    height: 300px;
+    box-shadow: 4.95px 4.95px 0px 0px rgba( 0, 0, 0, 0.3 );
+    text-align: left;
+    font-size:60px;
+    font-family: "Avenir Next LT Pro Bold Condensed";
+    overflow:hidden;
+    resize: none;
+    visibility: hidden;
+}
+
+#post {
+    position: absolute;
+    background-image: url('images/post.png');
+    left:390px;
+    top:820px;
+    width:181px;
+    height:75px;
+    visibility: hidden;
+    cursor: pointer;
+}

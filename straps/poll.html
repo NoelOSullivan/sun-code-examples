@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        /* These are rendered in the order that they are shown below,
+
+        party names are:
+         tory,
+         labour
+         ukip
+         libdem
+         green
+
+        all in lower case
+         */
+        var results = [
+                {
+                    pos: 1,
+                    party: "tory",
+                    count: 35
+                },
+                {
+                    pos: 2,
+                    party: "labour",
+                    count: 32
+                },
+                {
+                    pos: 3,
+                    party: "ukip",
+                    count: 14
+                },
+                {
+                    pos: 4,
+                    party: "green",
+                    count: 7
+                },
+                {
+                    pos: 5,
+                    party: "libdem",
+                    count: 7
+                }
+            ]
+
+    </script>
+</head>
+<body>
+    <div class="strap">
+        <div class="title">
+            <div class="latest">
+                LATEST
+            </div>
+            <div class="sunpoll">
+                SUN POLL
+            </div>
+        </div>
+        <div class="partiesHolder">
+
+        </div>
+    </div>
+</body>
+<style type="text/css">
+    @font-face {
+        font-family: 'Avenir';
+        src: url('./AvenirNextLTW01-Heavy.eot'); /* IE9 Compat Modes */
+        url('./AvenirNextLTW01-Heavy.woff') format('woff'), /* Pretty Modern Browsers */
+        url('./AvenirNextLTW01-Heavy.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('./AvenirNextLTW01-Heavy.svg#AvenirNextLTW01-Heavy') format('svg'); /* Legacy iOS */
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .strap {
+        width: 100%;
+        max-width: 980px;
+        background-color: #FFFFFF;
+        overflow: hidden;
+        position: relative;
+
+        font-family: 'Avenir';
+        font-weight: bold;
+        height: 80px;
+    }
+    .title {
+        width: 15%;
+        float: left;
+        padding-top: 16px;
+        height: 50px;
+    }
+    .title div {
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+    }
+    .title .latest{
+        font-size: 24px;
+    }
+    .title .sunpoll {
+        font-size: 18px;
+        margin-top: -4px;
+    }
+    .partiesHolder {
+        width: 85%;
+        float: left;
+        height: 80px;
+        position: relative;
+        padding-top: 10px;
+    }
+    .partyHolder {
+        float: left;
+        height: 100%;
+        width: 20%;
+        position: relative;
+    }
+    .partyHolder .counter {
+        color: #ffffff;
+        float: right;
+        position: relative;
+        height: 70px;
+        line-height: 78px;
+        bottom: 0;
+        font-size: 43px;
+    }
+    .partyHolder .percent {
+        color: #ffffff;
+        float: right;
+        height: 70px;
+        line-height: 88px;
+        padding: 0 5px;
+    }
+    .partyHolder .floatingIcon {
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        width: 67px;
+        height: 80px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    .partyHoldertory {
+        background-color: #365bcc;
+    }
+    .partyHoldertory .floatingIcon{
+        background-image: url('tory.png');
+    }
+    .partyHolderlabour {
+        background-color: #c72f25;
+    }
+    .partyHolderlabour .floatingIcon{
+        background-image: url('labour.png');
+    }
+    .partyHolderukip {
+        background-color: #661b8a;
+    }
+    .partyHolderukip .floatingIcon{
+        background-image: url('ukip.png');
+    }
+    .partyHoldergreen {
+        background-color: #80b31e;
+    }
+    .partyHoldergreen .floatingIcon{
+        background-image: url('green.png');
+    }
+    .partyHolderlibdem {
+        background-color: #f3d22e;
+    }
+    .partyHolderlibdem .floatingIcon{
+        background-image: url('libDem.png');
+    }
+    @media screen and (max-width: 760px) {
+        .strap {
+            height: 70px;
+        }
+        .partyHolder .floatingIcon {
+            bottom: 0;
+            height: 70px;
+            width: 50px
+        }
+        .partiesHolder {
+            padding-top: 0;
+            height: 60px;
+        }
+        .title {
+            padding-top: 4px;
+        }
+    }
+
+
+    @media screen and (max-width: 660px) {
+        .partyHolder .counter {
+            font-size: 30px;
+            height: 60px;
+            line-height: 90px;
+        }
+        .partyHolder .percent {
+            font-size: 15px;
+            height: 60px;
+            line-height: 94px;
+        }
+
+        .title .latest{
+            font-size: 20px;
+        }
+        .title .sunpoll {
+            font-size: 14px;
+            margin-top: -4px;
+        }
+
+    }
+    @media screen and (max-width: 570px) {
+
+        .partyHolder .floatingIcon {
+            display: none;
+        }
+
+        .title .latest{
+            font-size: 18px;
+        }
+        .title .sunpoll {
+            font-size: 12px;
+            margin-top: -4px;
+        }
+    }
+    @media screen and (max-width: 450px) {
+        .strap {
+            height: 40px;
+        }
+        .partiesHolder {
+            height: 40px;
+        }
+        .partyHolder .counter {
+            font-size: 30px;
+            height: 40px;
+            line-height: 56px;
+        }
+        .partyHolder .percent {
+            font-size: 15px;
+            height: 40px;
+            line-height: 60px;
+        }
+        .title {
+            display: none;
+        }
+        .partiesHolder {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 270px) {
+        .strap {
+            height: 30px;
+        }
+        .partiesHolder {
+            height: 30px;
+        }
+        .partyHolder .counter {
+            font-size: 20px;
+            height: 30px;
+            line-height: 46px;
+        }
+        .partyHolder .percent {
+            font-size: 18px;
+            height: 30px;
+            line-height: 50px;
+            padding: 0 1px;
+        }
+    }
+
+</style>
+<script type="text/javascript">
+    var countInterval = 50,
+        getTemplate = function(partyData) {
+            $party = $('<div class="partyHolder"><div class="floatingIcon"></div><div class="percent">%</div> <div class="counter">0</div></div>');
+            $party.addClass('partyHolder' + partyData.party).addClass('partyPos' + partyData.pos);
+            $party.find('.counter').data('count', partyData.count);
+            return $party;
+        },
+        initLoadingAnimation = function () {
+            var currentParty = 0;
+            for(currentParty = 1; currentParty <= 5; currentParty++) {
+                var currentElement = $('.partyPos' + currentParty + ' .counter');
+                countToTotal(currentElement);
+            }
+        },
+        countToTotal = function (element) {
+            var currentCount =  parseInt(element.html());
+            if (currentCount < element.data('count')) {
+                currentCount++;
+                element.html(currentCount);
+                setTimeout(function () { countToTotal(element)}, countInterval);
+            }
+        };
+
+    $(document).ready(
+        function () {
+            var $partiesHolder = $('.partiesHolder');
+            results.forEach(
+                function (partyData) {
+                    $partiesHolder.append(getTemplate(partyData));
+                }
+            );
+            initLoadingAnimation();
+        }
+    );
+</script>
+</html>

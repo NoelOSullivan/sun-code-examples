@@ -1,0 +1,388 @@
+:root {
+  --green-meme-color: #97ff80;
+  --libdem-meme-color: #e8a341;
+  --ukip-meme-color: #9a5de8;
+  --labour-meme-color: #ff5757;
+  --tory-meme-color: #52c0ff;
+  /*-------------------------------*/
+  --green-meme-text-color: #79cc66;
+  --libdem-meme-text-color: #ba8234;
+  --ukip-meme-text-color: #7b4aba;
+  --labour-meme-text-color: #cc4646;
+  --tory-meme-text-color: #429acc;
+  /*-------------------------------*/
+  --green-meme-shadow-color: #c4f9b9;
+  --libdem-meme-shadow-color: #ffd69d;
+  --ukip-meme-shadow-color: #c49cf8;
+  --labour-meme-shadow-color: #ffafaf;
+  --tory-meme-shadow-color: #b9e5ff;
+}
+
+#screen-canvas{
+  visibility: hidden;
+}
+
+/*-------------------------------------SLEEVES*/ 
+
+/* OTHER SLEEVE CSS FOUND IN screen-choice-party */
+
+.sleeve-eye {
+  position: absolute;
+  top: 0px;
+  left : -880px;
+  width: 1290px;
+  height: 960px;
+}
+
+/*-------------------------------------EYE INTERFACE*/ 
+
+/*#eye-interface {
+  position: absolute;
+  width: 320px;
+  height: 810px;
+  left: 0px;
+  top:150px;
+}*/
+
+.drag-text {
+  position: absolute;
+  background-image: url("images/screen-canvas/drag-text.png");
+  width:227px;
+  height:242px;
+  top:160px;
+  left:50px;
+}
+
+.rotation {
+  position: absolute;
+  background-image: url("images/screen-canvas/rotation.png");
+  width:169px;
+  height:47px;
+  top:440px;
+  left:80px;
+}
+
+#anticlockwise {
+  position: absolute;
+  background-image: url("images/screen-canvas/anticlockwise.png");
+  left: 80px;
+  top:500px;
+  width: 65px;
+  height: 57px;
+  cursor:pointer;
+}
+
+#clockwise {
+  position: absolute;
+  background-image: url("images/screen-canvas/clockwise.png");
+  left: 180px;
+  top:500px;
+  width: 65px;
+  height: 57px;
+  cursor:pointer;
+}
+
+#ready-button {
+  background-color: #c41316;
+  position: absolute;
+  left: 40px;
+  top:600px;
+  width: 240px;
+  height: 80px;
+  box-shadow: 4.95px 4.95px 0px 0px rgba( 0, 0, 0, 0.3 );
+  cursor:pointer;
+}
+
+.text-ready {
+  position: absolute;
+  top:20px;
+  left:55px;
+  color:#FFFFFF;
+  font-size:40px;
+  font-family: "Avenir Next LT Pro Heavy Condensed";
+  text-shadow: -2px -2px black;
+  user-select: none;
+  cursor:pointer;
+}
+
+#eye-div{
+  position: absolute;
+  width:1280px;
+  height: 960px;
+  /*pointer-events: none;*/
+  visibility: hidden;
+}
+
+#left-eye {
+  position: absolute;
+  background-image: url("images/screen-canvas/eye.png");
+  left: 90px;
+  top: 450px;
+  width: 64px;
+  height: 34px;
+  cursor:pointer;
+}
+
+#right-eye {
+  position: absolute;
+  background-image: url("images/screen-canvas/eye.png");
+  left: 190px;
+  top:450px;
+  width: 64px;
+  height: 34px;
+  cursor:pointer;
+}
+
+#take-photo {
+  background-color: #c41316;
+  position: absolute;
+  left: 32px;
+  top:600px;
+  width: 240px;
+  height: 80px;
+  box-shadow: 4.95px 4.95px 0px 0px rgba( 0, 0, 0, 0.3 );
+  cursor:pointer;
+}
+.text-photo {
+  position: absolute;
+  top:25px;
+  left:40px;
+  color:#FFFFFF;
+  font-size:30px;
+  font-family: "Avenir Next LT Pro Heavy Condensed";
+  text-shadow: -2px -2px black;
+  user-select: none;
+  cursor:default;
+  cursor:pointer;
+}
+
+/*-------------------------------------ADJUST INTERFACE*/ 
+
+#adjust-interface {
+  position: absolute;
+  width: 320px;
+  height: 810px;
+  left: 0px;
+  top:150px;
+}
+
+.adjust-text {
+  position: absolute;
+  background-image: url("images/screen-canvas/adjust-text.png");
+  width:182px;
+  height:42px;
+  top:0px;
+  left:70px;
+}
+
+.position {
+  position: absolute;
+  background-image: url("images/screen-canvas/position.png");
+  width:159px;
+  height:47px;
+  top:50px;
+  left:80px;
+}
+
+#arrow-up {
+  position: absolute;
+  background-image: url("images/screen-canvas/arrow-up.png");
+  left: 125px;
+  top:100px;
+  width: 68px;
+  height: 76px;
+  cursor:pointer;
+}
+
+#arrow-left {
+  position: absolute;
+  background-image: url("images/screen-canvas/arrow-left.png");
+  left: 45px;
+  top: 153px;
+  width: 74px;
+  height: 69px;
+  cursor:pointer;
+}
+
+#arrow-right {
+  position: absolute;
+  background-image: url("images/screen-canvas/arrow-right.png");
+  left: 198px;
+  top: 153px;
+  width: 74px;
+  height: 69px;
+  cursor:pointer;
+}
+
+#arrow-down {
+  position: absolute;
+  background-image: url("images/screen-canvas/arrow-down.png");
+  left: 125px;
+  top: 200px;
+  width: 68px;
+  height: 76px;
+  cursor:pointer;
+}
+
+.zoom {
+  position: absolute;
+  background-image: url("images/screen-canvas/zoom.png");
+  width:159px;
+  height:46px;
+  top:290px;
+  left:80px;
+}
+
+#button-plus {
+  position: absolute;
+  background-image: url("images/screen-canvas/button-plus.png");
+  left: 80px;
+  top: 345px;
+  width: 65px;
+  height: 66px;
+  cursor:pointer;
+}
+
+#button-minus {
+  position: absolute;
+  background-image: url("images/screen-canvas/button-minus.png");
+  left: 170px;
+  top: 365px;
+  width: 65px;
+  height: 22px;
+  cursor:pointer;
+}
+
+#tick {
+  position: absolute;
+  background-image: url("images/screen-canvas/tick.png");
+  left: 55px;
+  top: 580px;
+  width: 80px;
+  height: 80px;
+  cursor:pointer;
+  box-shadow: 4.95px 4.95px 0px 0px rgba( 0, 0, 0, 0.3 );
+}
+
+.restart-button-canvas {
+  position: absolute;
+  background-image: url("images/screen-share/restart-button.png");
+  left : 185px;
+  top: 580px;
+  width: 80px;
+  height: 80px;
+  cursor:pointer;
+  box-shadow: 4.95px 4.95px 0px 0px rgba( 0, 0, 0, 0.3 );
+}
+
+#button-oval{
+  position: absolute;
+  background-image: url("images/screen-canvas/preview-1.png");
+  left : 915px;
+  top: 715px;
+  width: 245px;
+  height: 85px;
+  cursor:pointer;
+  box-shadow: 2px 2px 0px 0px rgba( 0, 0, 0, 0.3 );
+  visibility: hidden;
+}
+
+#button-meme{
+  position: absolute;
+  background-image: url("images/screen-canvas/preview-2.png");
+  left : 915px;
+  top: 715px;
+  width: 245px;
+  height: 85px;
+  cursor:pointer;
+  box-shadow: 2px 2px 0px 0px rgba( 0, 0, 0, 0.3 );
+  visibility: hidden;
+}
+
+#small-oval{
+  position: absolute;
+  background-image: url("images/screen-canvas/small-oval.png");
+  width: 140px;
+  height: 184px;
+  visibility: hidden;
+}
+
+#large-oval{
+  position: absolute;
+  background-image: url("images/screen-canvas/large-oval.png");
+  width: 168px;
+  height: 247px;
+  visibility: hidden;
+}
+
+/*#cross {
+  position: absolute;
+  background-image: url("images/screen-canvas/cross.png");
+  left: 190px;
+  top: 580px;
+  width: 80px;
+  height: 80px;
+  cursor:pointer;
+  box-shadow: 4.95px 4.95px 0px 0px rgba( 0, 0, 0, 0.3 );
+}*/
+
+/*-------------------------------------CANVAS*/ 
+
+#canvas-wrapper {
+  position: absolute;
+  background-color: rgb( 255, 245, 104 );
+  box-shadow: 4.95px 4.95px 0px 0px rgba( 0, 0, 0, 0.3);
+  left: 520px;
+  top: 160px;
+  width: 636px;
+  height: 636px;
+}
+
+#canvas {
+  position: absolute;
+  background-color: rgb( 255, 255, 255 );
+  left: 2px;
+  top: 2px;
+}
+
+#canvas-op-wrapper {
+  position: absolute;
+  left: 520px;
+  top: 160px;
+  width: 636px;
+  height: 636px;
+}
+
+#canvas-op {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+}
+
+/*#eye-canvas {
+  position: absolute;
+  background-color: rgb( 255, 255, 255 );
+  left: 522px;
+  top: 162px;
+  width: 636px;
+  height: 636px;
+}*/
+
+#canvas-off-screen {
+  position: absolute;
+  left: 2000px;
+}
+
+#canvas-transform {
+  position: absolute;
+  left: 2000px;
+}
+
+#webcam {
+  position: absolute;
+  left: 522px;
+  top: 162px;
+  width : 632px;
+  height : 632px;
+  visibility: hidden;
+}

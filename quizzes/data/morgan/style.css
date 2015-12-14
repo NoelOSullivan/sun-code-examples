@@ -1,0 +1,111 @@
+:root {
+  --ui-color: #951ad1;
+  --glow-color: #c415f5;
+  --rosette-url: 'data/morgan/rosette-morgan.png';
+  --quiz-logo-url: 'data/morgan/logo-morgan.png';
+  --leader-url: 'data/morgan/morgan-torso.png';
+  --button-bg-url: 'data/morgan/button.png';
+  --button-bg-hover-url: 'data/morgan/button-hover.png';
+  --result-panel-url: 'data/morgan/result-panel.png';
+  --headline-panel-url: 'data/morgan/headline-panel.png';
+}
+
+.results #result-text p,
+.questionHolder #headline p,
+.questionHolder .answers .answer .caption {
+    text-shadow: 1px -1px rgba(255,255,255,0.5);
+}
+
+.questionHolder .imageHolder {
+  background-image: url('data/morgan/frame-back.png');
+  padding: 12px 16px; /* Substituted borders for padding */
+    border:none 0px transparent;
+}
+
+#start #leader-torso {
+  height:520px;
+  top:680px;
+  height:543px;
+}
+
+#scene {
+  position: absolute;
+  overflow: hidden;
+  top:-100px;
+  left:0px;
+  width:960px;
+  height:900px;
+}
+
+#morgan-end-1 {
+   position:absolute;
+   background-image:url('data/morgan/morgan-1.png');
+   top:70px;
+   width:605px;
+   height:612px;
+}
+
+#morgan-end-2 {
+   position:absolute;
+   background-image:url('data/morgan/morgan-2.png');
+   left:70px;
+   top:50px;
+   width:550px;
+   height:768px;
+}
+
+#morgan-end-3 {
+   position:absolute;
+   background-image:url('data/morgan/morgan-3.png');
+   left:70px;
+   top:70px;
+   width:546px;
+   height:591px;
+}
+
+.result0 #morgan-end-2,
+.result0 #morgan-end-3 {
+  display:none;
+}
+.result10 #morgan-end-2,
+.result10 #morgan-end-3 {
+  display:none;
+}
+.result20 #morgan-end-2,
+.result20 #morgan-end-3 {
+  display:none;
+}
+.result30 #morgan-end-2,
+.result30 #morgan-end-3 {
+  display:none;
+}
+
+.result40 #morgan-end-1,
+.result40 #morgan-end-3 {
+  display:none;
+}
+.result50 #morgan-end-1,
+.result50 #morgan-end-3 {
+  display:none;
+}
+.result60 #morgan-end-1,
+.result60 #morgan-end-3 {
+  display:none;
+}
+.result70 #morgan-end-1,
+.result70 #morgan-end-3 {
+  display:none;
+}
+
+.result80 #morgan-end-1,
+.result80 #morgan-end-2 {
+  display:none;
+}
+.result90 #morgan-end-1,
+.result90 #morgan-end-2 {
+  display:none;
+}
+.result100 #morgan-end-1,
+.result100 #morgan-end-2 {
+  display:none;
+}

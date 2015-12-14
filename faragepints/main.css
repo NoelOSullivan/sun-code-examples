@@ -1,0 +1,399 @@
+/* CSS4 variable definition (transpiled with cssnext) */
+:root {
+  --yellow-text-color: #fff568;
+}
+
+body {
+  background-color: #000;
+  overflow:hidden;
+}
+
+body,button {
+  font-family: "Avenir Next LT Pro Bold Condensed"
+}
+
+button,a {
+  font-family: "Avenir Next LT Pro Heavy Condensed";
+  text-transform: uppercase;
+  font-size: 36px;
+  text-shadow: 2px 2px #a42a8c;
+}
+
+a {
+  text-decoration: none;
+  color: var(--yellow-text-color);
+}
+
+#game-container {
+  position:absolute;
+  width:100%;
+}
+
+#game-container > #canvas-container {
+  z-index:5;
+  width:100%;
+}
+
+#view-overlay {
+  transform-origin:0 0;
+  position:absolute;
+  top:0;
+  left:0;
+  user-select: none;
+  z-index:10;
+}
+
+#view-overlay > * > * {
+  left:0;
+  top:0;
+  position:absolute;
+}
+
+#orientation-overlay {
+  position:absolute;
+  background-image: url('ui/overlay-orientation.png');
+  width:568px;
+  height:568px;
+  left:356px;
+  top:196px;
+  z-index:50;
+  display: none;
+}
+
+@media all and (orientation: portrait) {
+    #orientation-overlay {
+        display: block;
+    }
+}
+
+/* Preload animation */
+
+#preloader {
+  /*background:#000 url('ui/preload-logo.png') no-repeat;*/
+  background:#000;
+  width:1280px;
+  height:960px;
+}
+
+#preloader .progressWrapper {
+    /*top: 560px;
+    left: 50%;
+    margin-left: -178px;
+    height: 74px;
+    width: 356px;
+    position: absolute;*/
+}
+#preloader .progressWrapper .progress{
+    /*height: 74px;
+    overflow: hidden;
+    background-image: url('ui/baconLogo.png');
+    background-repeat: repeat-x;*/
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+#beer-fill-container {
+  position:absolute;
+  overflow:hidden;
+  top: 0px;
+  left: 0px;
+  width:1280px;
+  height:960px;
+}
+
+#beer-fill {
+   position:absolute;
+   background: url('ui/beer-fill.png') no-repeat;
+   left:800px;
+   top:650px;
+   width:482px;
+   height:989px;
+}
+
+#beer-mask {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:1280px;
+  height:960px;
+  background-image: url('ui/beer-cutout.png');
+}
+
+#beer-overlay {
+  position:absolute;
+   background-image: url('ui/beer-empty.png');
+   left: 0px;
+   top: 0px;
+   width:1280px;
+   height:960px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
+/* Splash screen, intro pages, etc. */
+#home-background {
+  background-image: url('ui/home-background.png');
+  width:1280px;
+  height:960px;
+}
+
+#home-background div {
+  position:absolute;
+}
+
+#home-billboard {
+  background-image: url('ui/home-foreground-billboard.png');
+  width:640px;
+  height:614px;
+  left:323px;
+  top:162px;
+}
+
+/* Logo */
+#logo-screen {
+  width:1280px;
+  height:960px;
+  cursor: pointer;
+  z-index:20;
+}
+
+/* Toolbar icons */
+#toolbar {
+  position:absolute;
+  z-index:100;
+  left: 1102px;
+  top: 667px;
+}
+
+#toolbar .icon {
+  display:block;
+  width:83px;
+  height:75px;
+  margin-left:13px;
+  background-repeat:no-repeat;
+  background-position:50% 50%;
+}
+
+#toolbar .icon-fullscreen {
+  background-image: url('ui/icon-full-screen.png');
+}
+#toolbar .icon-fullscreen:hover,#toolbar .icon-fullscreen:active {
+  background-image: url('ui/icon-full-screen-hover.png');
+}
+
+#toolbar .icon-normalscreen {
+  background-image: url('ui/icon-full-screen.png');
+}
+#toolbar .icon-normalscreen:hover,#toolbar .icon-normalscreen:active {
+  background-image: url('ui/icon-full-screen-hover.png');
+}
+
+#toolbar .icon-mute {
+  background-image: url('ui/icon-audio-unmuted.png');
+}
+#toolbar .icon-mute:hover,#toolbar .icon-mute:active {
+  background-image: url('ui/icon-audio-unmuted-hover.png');
+}
+
+#toolbar .icon-unmute {
+  background-image: url('ui/icon-audio-muted.png');
+}
+#toolbar .icon-unmute:hover,#toolbar .icon-unmute:active {
+  background-image: url('ui/icon-audio-muted-hover.png');
+}
+
+#toolbar .icon-back {
+  background-image: url('ui/icon-back.png');
+}
+#toolbar .icon-back:hover,#toolbar .icon-back:active {
+  background-image: url('ui/icon-back-hover.png');
+}
+
+/* Instructions into */
+
+#overlay-instructions {
+  position:absolute;
+  width:1280px;
+  height:960px;
+  background: url('ui/overlay-instructions-desktop.png') no-repeat 0 0;
+  cursor:pointer;
+}
+.touch #overlay-instructions {
+  background: url('ui/overlay-instructions.png') no-repeat 0 0;
+}
+
+/* Game ending screens */
+
+#panel-endgame {
+  position:relative;
+  background-image: url('ui/gameOverBack.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  width:1280px;
+  height:960px;
+}
+
+.shareIcon{
+  position:absolute;
+  width: 103px;
+  height:103px;
+  top: 580px;
+  cursor: pointer;
+  overflow: hidden;
+  text-indent: -1000px;
+}
+
+.shareIcon.facebookShare{
+  left: 365px;
+  width: 425px;
+}
+
+.shareIcon.twitterShare{
+  left: 792px;
+}
+
+.playAgain{
+  overflow: hidden;
+  position: absolute;
+  background-image: url('ui/playAgain.png');
+  width: 194px;
+  height: 193px;
+  top: 350px;
+  left: 950px;
+  cursor: pointer;
+}
+
+.playAgain.scores{
+    left: 950px;
+    top: 350px;
+}
+.showScores {
+  overflow: hidden;
+  position: absolute;
+  background-image: url('ui/showScores.png');
+  width: 194px;
+  height: 193px;
+  top: 350px;
+  left: 140px;
+  cursor: pointer;
+}
+.score {
+  color: #bd011c;
+  text-align: center;
+  font-size: 90px;
+  padding-top: 350px;
+  font-family: "Avenir Next LT Pro Bold Condensed";
+  text-shadow: 2px 2px #ffffff;
+}
+
+.button-fbshare {
+  display:inline-block;
+  height:104px;
+  padding-left:104px;
+  font-size:52px;
+  background: url('ui/icon-facebook.png') no-repeat left center;
+  vertical-align: middle;
+}
+
+#playagain-buttons .panel-playagain {
+  display: inline-block;
+  background-image: url('ui/panel-playagain.png');
+  position:relative;
+  width:339px;
+  height:81px;
+  padding-top:20px;
+  text-align: center;
+  cursor:pointer;
+  color:#fefefe;
+  font-size:52px;
+  text-transform:none;
+}
+
+/* Scoreboard */
+#scores-screen #home-billboard {
+  width: 1280px;
+  height: 960px;
+  background-position: center top;
+  background-image: url('ui/leaderboardBack.png');
+  background-repeat: no-repeat;
+}
+#scores-screen #home-billboard {
+  left: 0;
+  top: 0;
+}
+#scores-screen #home-billboard > * {
+  z-index:50;
+}
+
+#scores-list {
+  top: 350px;
+  left: 380px;
+  overflow-y:scroll;
+  width:505px;
+  height:195px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#scores-list p {
+  font-size:24px;
+}
+
+#scores-list .score-row {
+  font-family: "Avenir Next LT Pro Heavy Condensed";
+  font-size:42px;
+  text-shadow: none;
+  text-transform:uppercase;
+  color:#665b46;
+  position:relative;
+  height:39px;
+}
+
+#scores-list .score-row > * {
+  position:absolute;
+}
+
+#scores-list .score-pos {
+  left:0;  
+  font-family: "Avenir Next LT Pro Bold Condensed";
+}
+
+#scores-list .user-name {
+  color:#000;
+  left:60px;
+}
+
+#scores-list .score-time {
+  right: 10px;
+  text-transform:none;
+}
+
+#scores-list .button-fbconnect {
+  text-indent: -1000px;
+  height: 56px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-top: 20px;
+  background-image: url('ui/facebookConnect.png');
+  cursor: pointer;
+}
+
+#player-pint,#player-pint * {
+  position:absolute;
+  pointer-events: none;
+}
+
+.faded-background {
+  background-color:rgba(0,0,0,0.65);
+}
+
+.drink-responsibly {
+  background: transparent url('ui/drink-responsibly.png') no-repeat; 
+  position:absolute;
+  width: 708px;
+  height:125px;
+  top: 690px;
+  left: 286px;
+}

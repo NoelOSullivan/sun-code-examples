@@ -1,0 +1,30 @@
+{"frames": [
+
+{
+	"filename": "farage-board",
+	"frame": {"x":2,"y":2,"w":186,"h":257},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":186,"h":257},
+	"sourceSize": {"w":186,"h":257},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "you-board",
+	"frame": {"x":2,"y":261,"w":186,"h":257},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":186,"h":257},
+	"sourceSize": {"w":186,"h":257},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "farage-you.png",
+	"format": "RGBA8888",
+	"size": {"w":190,"h":520},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c0ee58cb20771f56ce6dbf0bef03e710:03aeada92e596dcb3efabf61fa337fe1:63bf2a5ed9c13c4bec3f9b9b15d66cdc$"
+}
+}

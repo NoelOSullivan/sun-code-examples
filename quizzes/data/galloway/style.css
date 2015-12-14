@@ -1,0 +1,33 @@
+:root {
+  --ui-color: #951ad1;
+  --glow-color: #c415f5;
+  --rosette-url: 'data/galloway/rosette-galloway.png';
+  --quiz-logo-url: 'data/galloway/logo-galloway.png';
+  --leader-url: 'data/galloway/galloway-torso.png';
+  --button-bg-url: 'data/galloway/button.png';
+  --button-bg-hover-url: 'data/galloway/button-hover.png';
+  --result-panel-url: 'data/galloway/result-panel.png';
+  --headline-panel-url: 'data/galloway/headline-panel.png';
+}
+
+#start #leader-torso {
+  height:520px;
+  top:680px;
+  height:543px;
+}
+
+#scene {
+  position: absolute;
+  overflow: hidden;
+  top:-50px;
+  left:30px;
+  width:665px;
+  height:613px;
+}
+
+#galloway-end {
+   position:absolute;
+   background-image: url('data/galloway/galloway-end.png');
+   width:665px;
+   height:613px;
+}
